@@ -1,0 +1,42 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"),
+        url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-btn {
+    transition: all 0.1s ease-in-out;
+}
+
+@mixin gradient ($deg: 45) {
+    background: linear-gradient(#{$deg}deg,#a2a2a2 0,#cacaca 33%,#fff 100%);
+}
+@mixin gradient-hover ($deg: 0) {
+    background: linear-gradient( #{$deg}deg, rgb(119,119,119) 0%, rgb(178,178,178) 33%, rgb(219,219,219) 100%);
+
+}
+@mixin accent-gradient ($deg: 45) {
+    background: linear-gradient( #{$deg}deg, rgb(238, 130, 24) 0%, rgb(238, 174, 25) 36%, rgb(247, 228, 114) 98%);
+}
+@mixin accent-gradient-hover ($deg: 45) {
+    background: linear-gradient( #{$deg}deg, rgb(197, 107, 17) 0%, rgb(182, 132, 17) 36%, rgb(223, 201, 81) 98%);
+}
+@mixin gradient-black ($deg: 0) {
+    background: linear-gradient( #{$deg}deg, rgb(0,0,0) 14%, rgb(26,26,26) 50%, rgb(77,77,77) 90%);
+}

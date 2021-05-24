@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Блог - одиночная страница</title>
+</head>
+<body>
+    @@include('_header.html')
+    <main class="main">
+        <section class="bread-crumbs">
+            <div class="container-inner">
+                <ul class="bread-crumbs__list">
+                    <li class="bread-crumbs__item">
+                        <a class="bread-crumbs__link" href="#">Главная</a>
+                    </li>
+                    <li class="bread-crumbs__item">
+                        <a class="bread-crumbs__link" href="#">Блоги</a>
+                    </li>
+                    <li class="bread-crumbs__item">
+                        <span class="bread-crumbs__link">По данным тестов на антитела, коронавирусом переболели 12,5% москвичей...</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="blog-single">
+            <div class="blog-single__wrapper">
+                <div class="container-inner blog-single__inner">
+                    <div class="container-article-wrap">
+                        <article class="blog-single__article-single article-single">
+                            <h1 class="article-single__title">По данным тестов на антитела, коронавирусом переболели 12,5% москвичей. Можно ли этому верить?</h1>
+                            <div class="article-single__header">
+                                <div class="article-single__header-info artical-header-info">
+                                    <div class="artical-header-info__avatar">
+                                        <img class="artical-header-info__avatar-image" src="img/article-avatar.jpg" alt="Аватар Павел Станиславович">
+                                    </div>
+                                    <div class="artical-header-info__info">
+                                        <div class="artical-header-info__info-top">
+                                            <div class="artical-header-info__name">Павел Станиславович</div>
+                                            <div class="artical-header-info__article-count"><span>42</span> записи</div>
+                                        </div>
+                                        <div class="artical-header-info__info-date article-date">
+                                            <span>
+                                                <svg class="svg-calendar-dims">
+                                                    <use xlink:href="#calendar"></use>
+                                                </svg>
+                                            </span>
+                                            <time datetime="2019-10-21">21 октября 2019</time>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="article-single__header-share-panel share-panel">
+                                    <ul class="share-panel__list">
+                                        <li class="share-panel__item">
+                                            <button class="share-panel__share-button share-panel__share-button--vk button" area-label="Поделиться во вконтакте">
+                                                <svg class="svg-vk-dims">
+                                                    <use xlink:href="#vk"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="share-panel__item">
+                                            <button class="share-panel__share-button share-panel__share-button--fb button" area-label="Поделиться во вконтакте">
+                                                <svg class="svg-facebook-dims">
+                                                    <use xlink:href="#facebook"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="share-panel__item">
+                                            <button class="share-panel__share-button share-panel__share-button--tw button" area-label="Поделиться во вконтакте">
+                                                <svg class="svg-twitter-dims">
+                                                    <use xlink:href="#twitter"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="share-panel__item">
+                                            <button class="share-panel__share-button share-panel__share-button--tg button" area-label="Поделиться во вконтакте">
+                                                <svg class="svg-telegram-active-dims">
+                                                    <use xlink:href="#telegram-active"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="share-panel__item">
+                                            <button class="share-panel__share-button share-panel__share-button--ok button" area-label="Поделиться во вконтакте">
+                                                <svg class="svg-odnoklassniki-dims">
+                                                    <use xlink:href="#odnoklassniki"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="share-panel__item">
+                                            <button class="share-panel__share-button share-panel__share-button--copy button" area-label="Поделиться во вконтакте">
+                                                <svg class="svg-copy-dims">
+                                                    <use xlink:href="#copy"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="share-panel__item">
+                                            <button class="share-panel__share-button share-panel__share-button--bm button" area-label="Поделиться во вконтакте">
+                                                <svg class="svg-bookmark-blog-dims">
+                                                    <use xlink:href="#bookmark-blog"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="article-single__wrapper">
+                                <img class="article-single__image" src="img/article-image.jpg" alt="Изображение статьи">
+                                <div class="article-single__article">
+                                    <div class="article-single__content-wrapper">
+                                        <div class="article-single__content">
+                                            <p>
+                                                На первый взгляд, «Мир! Дружба! Жвачка!» — история о том же, о чем
+                                                и многие российские (и белорусские) фильмы последнего времени
+                                                Снятые молодыми режиссерами, как правило, дебютантами. И «Хрусталь» Дарьи Жук, и «Бык» Бориса Акопова, и «Нашла коса на камень» Ани Крайс, и «Печень» Ивана Снежкина, и «Теснота» Кантемира Балагова — истории о поколении девяностых. Кто-то из авторов вспоминает это время как черную комедию, кто-то — как гангстерский балаган в духе «Не грози Южному централу, попивая сок у себя в квартале», но для большинства тридцатилетних это время не свободы и возможностей, а растерянности и травм. Время, которое заканчивается разрывом со старшими.
+                                                
+                                                В «Тесноте» мать и дочь прощаются под водопадом, буквально теряя дар речи. В финале «Быка» молодая героиня, ставшая проституткой, сидит в ресторане и смотрит последнее обращение Ельцина; на ее красивом лице появляется шрам, а во взгляде — презрение и недоверие к старику на экране. «Нашла коса на камень» заканчивается еще радикальнее: героиня Ксении Кутеповой сидит за новогодним столом (по телевизору вот-вот начнется та самая рокировка Ельцина и Путина) рядом с только что убитым ею мужчиной. Слоган фильма: «Мы все некрофилы. Хочешь поговорить об этом?»
+                                                
+                                                На первый взгляд, «Мир! Дружба! Жвачка!» — история о том же, о чем
+                                                и многие российские (и белорусские) фильмы последнего времени
+                                                Телевидение обращается с темой 1990-х осторожнее — все-таки аудитория гораздо больше, чем у фестивального кино. В сериале «90-е: Весело и громко» (канал СТС) роман воспитания в суровые времена превращается в школьный мюзикл: звучат ностальгические песни, даже зловещие персонажи выглядят карикатурно, а юность и невинность побеждают бедность и страх. В драме Сергея Урсуляка «Ненастье» (канал «Россия») основные события книги Алексея Иванова переносятся из нулевых в девяностые. Кто-то из критиков и зрителей увидел в этом замалчивание проблемы: мол, в 2008-м, при новой власти, такой беспредел случиться не мог. Сами продюсеры объясняют это производственными причинами: когда события разворачиваются на протяжении двадцати лет, а запоминающихся героев — под четыре десятка, нужно думать не только о политике, но и о гриме. Трудно добыть огромные средства на омолаживание и состаривание актеров, если ты не Мартин Скорсезе, а заказчик — не Netflix.
+                                            </p>
+                                        </div>
+                                        <div class="article-single__content-aside">
+                                            <div class="article-single__content-aside-likes">
+                                                <div class="article-single__aside-like">
+                                                    <svg class="svg-like-dims">
+                                                        <use xlink:href="#like"></use>
+                                                    </svg>
+                                                    <span class="article-single__aside-like-count">12</span>
+                                                </div>
+                                                <div class="article-single__aside-dislike">
+                                                    <svg class="svg-dislike-dims">
+                                                        <use xlink:href="#dislike"></use>
+                                                    </svg>
+                                                    <span class="article-single__aside-dislike-count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="article-single__bookmark-wrapper">
+                                                <div class="article-single__bookmark">
+                                                    <svg class="svg-bookmark-blog-dims">
+                                                        <use xlink:href="#bookmark-blog"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-single__tags tags-blog">
+                                        <ul class="tags-blog__list">
+                                            <li class="tags-blog__item">
+                                                <a class="tags-blog__link" href="#">Политология</a>
+                                            </li>
+                                            <li class="tags-blog__item">
+                                                <a class="tags-blog__link" href="#">Политология</a>
+                                            </li>
+                                            <li class="tags-blog__item">
+                                                <a class="tags-blog__link" href="#">Политология</a>
+                                            </li>
+                                            <li class="tags-blog__item">
+                                                <a class="tags-blog__link" href="#">Политология</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="article-single__share-after-article share-after-article">
+                                        <div class="article-single__content-aside-likes">
+                                            <div class="article-single__aside-like">
+                                                <svg class="svg-like-dims">
+                                                    <use xlink:href="#like"></use>
+                                                </svg>
+                                                <span class="article-single__aside-like-count">12</span>
+                                            </div>
+                                            <div class="article-single__aside-dislike">
+                                                <svg class="svg-dislike-dims">
+                                                    <use xlink:href="#dislike"></use>
+                                                </svg>
+                                                <span class="article-single__aside-dislike-count">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="share-after-article__share-panel share-panel">
+                                            <p class="share-panel__text">Поделиться:</p>
+                                            <ul class="share-panel__list">
+                                                <li class="share-panel__item">
+                                                    <button class="share-panel__share-button share-panel__share-button--vk button" area-label="Поделиться во вконтакте">
+                                                        <svg class="svg-vk-dims">
+                                                            <use xlink:href="#vk"></use>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="share-panel__item">
+                                                    <button class="share-panel__share-button share-panel__share-button--fb button" area-label="Поделиться во вконтакте">
+                                                        <svg class="svg-facebook-dims">
+                                                            <use xlink:href="#facebook"></use>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="share-panel__item">
+                                                    <button class="share-panel__share-button share-panel__share-button--tw button" area-label="Поделиться во вконтакте">
+                                                        <svg class="svg-twitter-dims">
+                                                            <use xlink:href="#twitter"></use>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="share-panel__item">
+                                                    <button class="share-panel__share-button share-panel__share-button--tg button" area-label="Поделиться во вконтакте">
+                                                        <svg class="svg-telegram-active-dims">
+                                                            <use xlink:href="#telegram-active"></use>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="share-panel__item">
+                                                    <button class="share-panel__share-button share-panel__share-button--ok button" area-label="Поделиться во вконтакте">
+                                                        <svg class="svg-odnoklassniki-dims">
+                                                            <use xlink:href="#odnoklassniki"></use>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="share-panel__item">
+                                                    <button class="share-panel__share-button share-panel__share-button--copy button" area-label="Поделиться во вконтакте">
+                                                        <svg class="svg-copy-dims">
+                                                            <use xlink:href="#copy"></use>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="share-panel__item">
+                                                    <button class="share-panel__share-button share-panel__share-button--bm button" area-label="Поделиться во вконтакте">
+                                                        <svg class="svg-bookmark-blog-dims">
+                                                            <use xlink:href="#bookmark-blog"></use>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="article-single__banners after-article-banners">
+                                        <div class="after-article-banners__banner banner banner--article">
+                                            <a href="#">Баннер</a>
+                                        </div>
+                                        <div class="after-article-banners__banner banner banner--article">
+                                            <a href="#">Баннер</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <section class="articles-author">
+                            <div class="container-article">
+                                <div class="articles-author__wrapper">
+                                    <div class="articles-author__title-wrapper">
+                                        <h2 class="articles-author__title">Другие статьи автора</h2>
+                                    </div>
+                                    <article class="articles-author__article">
+                                        <a class="articles-author__link" href="#">
+                                            <img class="articles-author__igame" src="img/article-thumbnail.jpg" alt="">
+                                            <div class="articles-author__inner">
+                                                <h3 class="articles-author__titile-article">В Иркутской области произошел бунт в колонии строгого режима. Его подавил спецназ, пострадали сотни</h3>
+                                                <div class="articles-author__date-wrapper">
+                                                    <div class="artical-header-info__info-date article-date">
+                                                        <span>
+                                                            <svg class="svg-calendar-dims">
+                                                                <use xlink:href="#calendar"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <time datetime="2019-10-21">21 октября 2019</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="articles-author__article">
+                                        <a class="articles-author__link" href="#">
+                                            <img class="articles-author__igame" src="img/article-thumbnail.jpg" alt="">
+                                            <div class="articles-author__inner">
+                                                <h3 class="articles-author__titile-article">В Иркутской области произошел бунт в колонии строгого режима. Его подавил спецназ, пострадали сотни</h3>
+                                                <div class="articles-author__date-wrapper">
+                                                    <div class="artical-header-info__info-date article-date">
+                                                        <span>
+                                                            <svg class="svg-calendar-dims">
+                                                                <use xlink:href="#calendar"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <time datetime="2019-10-21">21 октября 2019</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="articles-author__article">
+                                        <a class="articles-author__link" href="#">
+                                            <img class="articles-author__igame" src="img/article-thumbnail.jpg" alt="">
+                                            <div class="articles-author__inner">
+                                                <h3 class="articles-author__titile-article">В Иркутской области произошел бунт в колонии строгого режима. Его подавил спецназ, пострадали сотни</h3>
+                                                <div class="articles-author__date-wrapper">
+                                                    <div class="artical-header-info__info-date article-date">
+                                                        <span>
+                                                            <svg class="svg-calendar-dims">
+                                                                <use xlink:href="#calendar"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <time datetime="2019-10-21">21 октября 2019</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('_footer.html')
+    
+</body>
+</html>

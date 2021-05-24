@@ -1,0 +1,36 @@
+.artical-header-info {
+    &__avatar {
+        margin-right: 20px;
+        min-width: 54px;
+    }
+    &__avatar-image {
+        border-radius: 50%;
+    }
+    &__info-top {
+        display: flex;
+    }
+    &__name {
+        padding-right: 20px;
+        position: relative;
+        font-size: 16px;
+        font-family: $Myriad;
+        color: rgb(16, 16, 16);
+        line-height: 1.375;
+        max-width: 300px;
+          
+        &::after {
+            content: "\00B7";
+            position: absolute;
+            top: 0;
+            right: 8px;
+            color: rgb(80, 80, 80);
+        }
+    }
+    &__article-count {
+        font-size: 16px;
+        font-family: $Myriad;
+        color: rgb(80, 80, 80);
+        line-height: 1.375;
+        font-weight: 300;
+    }
+}

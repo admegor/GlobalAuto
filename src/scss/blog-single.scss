@@ -1,0 +1,22 @@
+.blog-single {
+    padding-bottom: 70px;
+    &__wrapper {
+        margin: 0 10px;
+    }
+    &__inner {
+        background-color: $white;
+        border-radius: 15px;
+    }
+    &__article-single {
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+@media (max-width: 780px) {
+    .blog-single {
+        &__inner {
+            padding: 0;
+        }
+    }
+}

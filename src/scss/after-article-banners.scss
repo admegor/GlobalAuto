@@ -1,0 +1,17 @@
+.after-article-banners {
+    padding: 25px 60px;
+    background: url("../img/bg-banners2.jpg.png");
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__banner {
+        background-color: #848484;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 630px) {
+    .after-article-banners {
+        padding: 15px 20px;
+    }
+}

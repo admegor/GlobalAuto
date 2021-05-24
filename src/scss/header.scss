@@ -1,0 +1,94 @@
+.header {
+    background: url("../img/bg-header.jpg") no-repeat center center;
+    background-size: cover !important;
+    &__top {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__logo-link {
+        margin-right: 24px;
+    }
+    &__title-nav-wrapper {
+        align-items: center;
+        margin-right: auto;
+    }
+    &__title {
+        margin: 18px 0;
+        font-size: 28px;
+        font-family: "MyriadPro", "Arial", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $white;
+        text-shadow: 0px 5px 8.82px rgba(2, 12, 17, 0.4);
+    }
+    &__titile-block-wrapper {
+        display: flex;
+    }
+    &__block-list {
+        @include list-reset;
+        display: flex;
+        padding: 2px 12px 0px;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    &__block-item+&__block-item {
+        padding-left: 12px;
+        transition: .2s ease-in;
+    }
+    &__block-link {
+        display: inline-block;
+        position: relative;
+        padding-left: 28px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-repeat: no-repeat;
+        color: $white;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        left: 0;
+        top: 0;
+        &--global {
+            background-position: -8px 5px;
+            background-image: url("../img/icon-global.png");
+        }
+        &--local {
+            background-position: -5px 5px;
+            background-image: url("../img/icon-local.png");
+        }
+        &--direct {
+            background-position: -8px 5px;
+            background-image: url("../img/icon-direct.png");
+        }
+    }
+    &__block-item:hover &__block-link {
+        text-decoration: none;
+    }
+    &__block-currency {
+        background: url("../img/icon-currency.png") no-repeat 7px 7px;
+        margin-right: 10px;
+    }
+    &__block-contacts {
+        background: url("../img/icon-contacts.png") no-repeat 7px 7px;
+        margin-right: 10px;
+    }
+    &__search {
+        width: 42px;
+        border-radius: 10px;
+        background: url("../img/icon-search.png") no-repeat 8px 8px;
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+    &__menu-wrapper {
+        align-self: center;
+        margin-left: 10px;
+    }
+    &__burger-menu {
+        background: url("../img/icon-burger.png") no-repeat 14px 12px;
+    }
+    &__bottom {
+        padding-bottom: 12px;
+    }
+}

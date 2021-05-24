@@ -1,0 +1,38 @@
+.bread-crumbs {
+    padding: 18px 0 20px;
+    &__list {
+        @include list-reset;
+        display: flex;
+    }
+    &__item:first-child  &__link{
+        padding-left: 22px;
+        position: relative;
+    }
+    &__item + &__item {
+        padding-left: 30px;
+        position: relative;
+    }
+    &__link {
+        color: $white;
+        text-decoration: underline;
+    }
+    &__link svg {
+        position: absolute;
+        left: 0;
+        top: 3px;
+        width: 13px;
+        height: 13px;
+        fill: $white;
+    }
+    &__item:not(:first-child) svg {
+        position: absolute;
+        left: 8px;
+        top: 9px;
+        width: 15px;
+        height: 8px;
+        fill: $white;
+    }
+    &__item:last-child &__link {
+        text-decoration: none;
+    }
+}

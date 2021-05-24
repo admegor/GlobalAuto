@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Страница - логистика</title>
+</head>
+<body>
+    @@include('_header.html')
+    <main class="main">
+        <section class="bread-crumbs">
+            <div class="container-inner">
+                <ul class="bread-crumbs__list">
+                    <li class="bread-crumbs__item">
+                        <a class="bread-crumbs__link" href="#">
+                            <span>
+                                <svg class="svg-home-dims">
+                                    <use xlink:href="#home"></use>
+                                </svg>
+                            </span>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="bread-crumbs__item">
+                        <span>
+                            <svg class="svg-breadcrumbs-right-arrow-dims">
+                                <use xlink:href="#breadcrumbs-right-arrow"></use>
+                            </svg>
+                        </span>
+                        <span class="bread-crumbs__link">Логистика</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="container-inner">
+            <div class="page-wrapper">
+                <div class="page-title">
+                    <h1 class="page-title__title">Логистика</h1>
+                </div>
+                <div class="page-description">
+                    <p class="page-description__text">
+                        Краткое описание раздела и Текст вступления, написан для примера. Краткое описание раздела,
+                        текст вступления, написан для примера. Краткое описание раздела и Текст вступления, написан для примера.
+                        Краткое описание раздела и Текст вступления, написан для примера. 
+                    </p>
+                </div>
+                <div class="page-info">
+                    <div class="page-info__wrapper">
+                        <div class="page-info__item page-info__item--warning">
+                            <p class="page-info__title">Предупреждение</p>
+                            <p class="page-info__description">Текст, описывающий смысл данного баннера. Текст, смысл данного баннера который писывает.</p>
+                        </div>
+                        <div class="page-info__item page-info__item--important">
+                            <p class="page-info__title">Важно</p>
+                            <p class="page-info__description">Текст, описывающий смысл данного баннера. </p>
+                        </div>
+                        <div class="page-info__item page-info__item--know">
+                            <p class="page-info__title">Нужно знать</p>
+                            <p class="page-info__description">Текст, описывающий смысл данного баннера. Текст, смысл данного баннера который писывает. Cмысл данного описывающий смысл данного...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-inner">
+                    <div class="page-logistics">
+                        <div class="page-logistics__wrapper logistics-symbols">
+                            <div class="logistics-symbols__tile">Условные обозначения:</div>
+                            <ul class="logistics-symbols__list">
+                                <li class="logistics-symbols__item">
+                                    <span>
+                                        <svg class="svg-boat-dims">
+                                            <use xlink:href="#boat"></use>
+                                        </svg>
+                                          
+                                    </span>
+                                    <span class="logistics-symbols__separator">—</span>
+                                    <span class="logistics-symbols__item-text">
+                                        порты отправки грузов из США
+                                    </span>
+                                </li>
+                                <li class="logistics-symbols__item">
+                                    <span>
+                                        <svg class="svg-cargo-yellow-dims">
+                                            <use xlink:href="#cargo-yellow"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="logistics-symbols__separator">—</span>
+                                    <span class="logistics-symbols__item-text">
+                                          город доставки груза в России с открытым офисом
+                                    </span>
+                                </li>
+                                <li class="logistics-symbols__item">
+                                    <span>
+                                        <svg class="svg-cargo-grey-dims">
+                                            <use xlink:href="#cargo-grey"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="logistics-symbols__separator">—</span>
+                                    <span class="logistics-symbols__item-text">
+                                        город доставки груза в России, в котором не открыт офис
+                                    </span>
+                                </li>
+                                <li class="logistics-symbols__item">
+                                    <span>
+                                        <svg class="svg-route-line-dims">
+                                            <use xlink:href="#route-line"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="logistics-symbols__separator">—</span>
+                                    <span class="logistics-symbols__item-text">
+                                        линия маршрута
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="page-logistics__map-wrapper">
+                            <img class="page-logistics__map" src="img/bg-map-logistics.jpg" alt="Карта логистики">
+                        </div>
+                        <div class="page-logistics__calculator calculator">
+                            <form action="">
+                                <div class="calculator__row">
+                                    <div class="calculator__type">
+                                        <label class="calculator__label" for="type-route">Тип перевзоки:</label>
+                                        <select class="calculator__select" name="type-route" id="type-route">
+                                            <span class="calculator__select-icon"></span>
+                                            <option value="Глобальная">Глобальная</option>
+                                            <option value="Глобальная2">Глобальная2</option>
+                                            <option value="Глобальная3">Глобальная3</option>
+                                            <option value="Глобальная4">Глобальная4</option>
+                                        </select>
+                                    </div>
+                                    <span class="calculator__or-separator">или</span>
+                                    <div class="calculator__build">
+                                        <label class="calculator__label">Построй свой маршрут:</label>
+                                        <div class="calculator__button-wrapper">
+                                            <button class="calculator__button button" type="button">
+                                                <span class="calculator__button-icon">
+                                                    <svg class="svg-boat-front-dims">
+                                                        <use xlink:href="#boat-front"></use>
+                                                    </svg>
+                                                </span>
+                                                <span>По морю</span>
+                                            </button>
+                                            <button class="calculator__button button" type="button">
+                                                <span class="calculator__button-icon">
+                                                    <svg class="svg-car-front-dims">
+                                                        <use xlink:href="#car-front"></use>
+                                                    </svg>
+                                                </span>
+                                                <span>По суше</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculator__row-second">
+                                    <div class="calculator__item">
+                                        <label class="calculator__label" for="departure-city">Город отправления груза:</label>
+                                        <select class="calculator__select" name="departure-city" id="departure-city">
+                                            <option value="Город">Город</option>
+                                            <option value="Город2">Город2</option>
+                                            <option value="Город3">Город3</option>
+                                            <option value="Город4">Город4</option>
+                                        </select>
+                                    </div>
+                                    <div class="calculator__item">
+                                        <label class="calculator__label" for="receipt-city">Город получения груза:</label>
+                                        <select class="calculator__select" name="receipt-city" id="receipt-city">
+                                            <option value="Город">Город</option>
+                                            <option value="Город2">Город2</option>
+                                            <option value="Город3">Город3</option>
+                                            <option value="Город4">Город4</option>
+                                        </select>
+                                    </div>
+                                    <div class="calculator__item">
+                                        <label class="calculator__label" for="volume">Город отправления груза:</label>
+                                        <input class="calculator__input-text" type="text" name="volume" id="volume" placeholder="Значение от 0 до 300">
+                                    </div>
+                                    <div class="calculator__item">
+                                        <input class="calculator__button calculator__button--submit button" type="submit" value="Рассчитать">
+                                    </div>
+                                </div>
+                                <div class="calculator__result-wrapper">
+                                    <div class="calculator__result-item">
+                                        <span class="calculator__result-icon">
+                                            <svg class="svg-wallet-dims">
+                                                <use xlink:href="#wallet"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="calculator__result-label">Цена перевозки</span>
+                                        <span class="calculator__result-value">120 000 руб.</span>
+                                    </div>
+                                    <div class="calculator__result-item">
+                                        <span class="calculator__result-icon">
+                                            <svg class="svg-clock-dims">
+                                                <use xlink:href="#clock"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="calculator__result-label">Срок перевозки</span>
+                                        <span class="calculator__result-value">1-3</span>
+                                    </div>
+                                    <div class="calculator__result-item">
+                                        <span class="calculator__result-icon">
+                                            <svg class="svg-road-dims">
+                                                <use xlink:href="#road"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="calculator__result-label">Расстояние</span>
+                                        <span class="calculator__result-value">3 521 км</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="page-logistics__banner">
+                            <div class="banner__wrapper banner__wrapper--triple">
+                                <div class="banner banner--triple"><a href="#">Баннер</a></div>
+                                <div class="banner banner--triple"><a href="#">Баннер</a></div>
+                                <div class="banner banner--triple"><a href="#">Баннер</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-pre-footer"></div>
+            </div>
+        </div>
+    </main>
+    @@include('_footer.html')
+    
+</body>
+</html>

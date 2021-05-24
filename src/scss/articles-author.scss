@@ -1,0 +1,35 @@
+.articles-author {
+    &__wrapper {
+        background-color: #f5f5f5;
+        border: 1px solid #e6e6e6;
+        border-radius: 10px;
+        padding: 30px 30px 20px;
+    }
+    &__title-wrapper {
+        border-bottom: 2px solid $accent;
+        padding-bottom: 10px;
+    }
+    &__article + &__article{
+        border-top: 1px solid #e6e6e6;
+    }
+    &__title {
+        margin: 0;
+    }
+    &__link {
+        display: flex;
+        padding: 20px 0;
+    }
+    &__igame {
+        margin-right: 20px;
+        max-width: 90px;
+        max-height: 90px;
+    }
+    &__titile-article {
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-family: $Myriad;
+        color: rgb(16, 16, 16);
+        line-height: 1.375;
+    }
+}

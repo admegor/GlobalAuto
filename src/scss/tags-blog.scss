@@ -1,0 +1,35 @@
+.tags-blog {
+    &__list {
+        @include list-reset;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    &__item + &__item {
+        margin-left: 6px;
+    }
+    &__item {
+        padding: 3px 8px;
+        margin-bottom: 5px;
+        border: 1px solid $accent;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        transition: $transition-btn;
+        cursor: pointer;
+        &:hover {
+            background-color: $accent;
+        }
+        &:hover .tags-blog__link {
+            color: $white;
+        }
+    }
+    &__link {
+        text-transform: uppercase;
+        color: $accent;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: $Myriad;
+        line-height: 1;
+    }
+}

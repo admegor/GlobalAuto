@@ -1,0 +1,54 @@
+.hero {
+    overflow: hidden;
+    border-top: 3px solid #d9dee8;
+    border-bottom: 3px solid #d9dee8;
+    &__bg-image {
+        width: 100%;
+    }
+    &__running-line-primary {
+        display: flex;
+        white-space: nowrap;
+        padding: 1.2% 0;
+        background: url("../img/bg-running-line.jpg") 0 0;
+        & p {
+            font-size: 22px;
+            line-height: 1.3;
+            color: $white;
+            font-family: $Myriad;
+            font-weight: 700;
+            margin: 0;
+            position: relative;
+            padding-right: 46px;
+            &::after {
+                content: "\25CF";
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                top: 0px;
+                right: 24px;
+            }
+        }
+    }
+    &__running-line-secondary {
+        display: flex;
+        white-space: nowrap;
+        padding:0.6% 0;
+        background-color: #101010;
+        & p {
+            font-size: 14px;
+            font-weight: 700;
+            color: $white;
+            margin: 0;
+            position: relative;
+            padding-right: 28px;
+            & + p::before {
+                content: "\25CF";
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                top: 0px;
+                left: -18px;
+            }
+        }
+    }
+}

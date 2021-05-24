@@ -1,0 +1,47 @@
+.choices {
+    max-width: 330px;
+    border-radius: 4px;
+    border: 2px solid #e6e6e6;
+    max-height: 50px;
+}
+.choices[data-type*=select-one]:after {
+    width: 50px;
+    height: 100%;
+    border-color: transparent;
+    width: 50px;
+    height: 100%;
+    
+    right: 0;
+    top: 4px;
+    
+    background: url("../img/icon-arrow-select.png") no-repeat center center;
+}
+.choices[data-type*=select-one]:before {
+    content: "";
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(202,202,202) 77%, rgb(225,225,225) 100%);
+    
+}
+.choices[data-type*=select-one].is-open:after {
+    border-color: transparent;
+    margin-top: 0;
+}
+.calculator__select {
+    position: relative;
+}
+.calculator__select-icon {
+}
+.is-focused .choices__inner {
+    border-color: transparent;
+}
+.is-open .choices__inner {
+    // border: none;
+    border-radius: 0px;
+}

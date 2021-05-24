@@ -1,0 +1,15 @@
+.article-date {
+    padding-left: 26px;
+    position: relative;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-family: $Myriad;
+    & span svg {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 14px;
+        height: 14px;
+        fill: #8c8c8c;
+    }
+}

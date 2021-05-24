@@ -1,0 +1,105 @@
+.site-nav {
+    display: flex;
+    position: relative;
+    padding-left: 30px;
+    padding-left: 30px;
+    height: 42px;
+    &__box-wrapper {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    &__list {
+        @include list-reset;
+        display: flex;
+        align-items: center;
+    }
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 42px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: linear-gradient( 90deg, rgb(162, 162, 162) 0%, rgb(202, 202, 202) 33%, rgb(255, 255, 255) 100%);
+        background-repeat: no-repeat;
+        z-index: 2;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 8px;
+            top: 12px;
+            background-image: url("../img/icon-site-nav-arrow-prev.png");
+        }
+    }
+    &__next {
+        left: auto;
+        right: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        &::before {
+            background-image: url("../img/icon-site-nav-arrow-next.png");
+        }
+    }
+    &__title {
+        white-space: nowrap;
+        font-family: $Myriad;
+        font-size: 12px;
+        line-height: 1.4;
+        font-weight: bold;
+        color: $white;
+        text-shadow: $textshadow;
+        text-transform: uppercase;
+        background-color: rgba(255, 255, 255, 0.4);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+    }
+    &__link {
+        color: $white;
+        text-shadow: $textshadow;
+        font-size: 14px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+        height: 42px;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            @include transition-btn;
+        }
+    }
+    &__item {
+        position: relative;
+    }
+    &__item i {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        vertical-align: middle;
+        width: 40px;
+        height: 40px;
+    }
+    &__item + &__item &__link::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 1px;
+        height: 30px;
+
+        background-color: $white;
+    }
+}

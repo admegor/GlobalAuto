@@ -1,0 +1,116 @@
+.marketplace {
+    margin-bottom: 30px;
+    &__title-wrapper {
+        margin-bottom: 30px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__inner {
+        display: flex;
+        width: 900px;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+    &__block {
+        width: 33.3%;
+    }
+    &__block + &__block {
+        margin-left: 26px;
+    }
+    &__block-top-wrap {
+        border: 2px solid #fdfdfd;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        @include gradient(45);
+        margin-bottom: 6px;
+        &:hover {
+            @include accent-gradient;
+            box-shadow: 0px 0px 30px 10px rgba(178, 106, 24, 0.2);
+        }
+        &:hover .marketplace__block-top-title {
+            color: $white;
+        }
+    }
+    &__block-top-link,
+    &__block-bottom-link {
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    &__block-top-title,
+    &__block-bottom-title {
+        margin: 0;
+        font-size: 12px;
+        color: rgb(16, 16, 16);
+        font-weight: 700;
+        text-align: center;
+    }
+    &__block-bottom-wrap {
+        border: 2px solid #fdfdfd;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        @include gradient(45);
+        &:hover {
+            @include accent-gradient;
+            box-shadow: 0px 0px 30px 10px rgba(178, 106, 24, 0.2);
+        }
+        &:hover .marketplace__block-bottom-title {
+            color: $white;
+        }
+    }
+    &__block-middle-wrap {
+        background-color: $black;
+        margin-bottom: 6px;
+        &:hover {
+            box-shadow: 0px 0px 30px 10px rgba(178, 106, 24, 0.2);
+            & .marketplace__block-middle-link {
+                border-color: $accent;
+            }
+        }
+    }
+    &__block-middle-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #fdfdfd;
+        & img {
+            max-height: 249px;
+        }
+    }
+}
+
+@media (max-width: 1290px) {
+    .marketplace {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__banner {
+            margin: 10px 0;
+        }
+        &__inner {
+            // flex-direction: column;
+            align-items: center;
+            width: auto;
+        }
+        &__block {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 780px) {
+    .marketplace {
+        &__inner {
+            width: 100%;
+            flex-direction: column;
+        }
+        &__block + &__block {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+}

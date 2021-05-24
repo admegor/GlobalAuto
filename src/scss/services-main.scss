@@ -1,0 +1,169 @@
+.services-main {
+    display: flex;
+    justify-content: space-between;
+    &__banner-link-wrapper {
+        background-size: contain;
+        height: 100%;
+        border-radius: 4px;
+    }
+    .broker-services &__banner-link-wrapper {
+        background: url("../img/services/bg-cards.jpg") no-repeat center center;
+        padding: 40px;
+    }
+    .services &__banner-link-wrapper {
+        display: block;
+        width: 100%;
+        background: url("../img/services/bg-globalauto.jpg") no-repeat center center;
+    }
+    .transport-services &__banner-link-wrapper {
+        padding: 40px;
+        background: url("../img/services/bg-advertisement.jpg") no-repeat center center;
+    }
+    &__banner-inner {
+        width: 347px;
+        height: 340px;
+    }
+    &__banner-text {
+        margin: 0;
+        margin-bottom: 32px;
+    }
+    &__content-icon {
+        & img {
+            width: 50px;
+            height: 50px;
+        }
+        & img svg {
+            width: 50px;
+            height: 50px;
+        }
+        &:hover img svg {
+            fill: aqua;
+            stroke: red;
+        }
+    }
+    &__content-wrapper {
+        width: 670px;
+        margin: 0 10px;
+    }
+    &__content-wrapper-row {
+        display: flex;
+    }
+    &__content-wrapper-row + &__content-wrapper-row {
+        margin-top: 18px;
+    }
+    &__content-item {
+        position: relative;
+        @include gradient;
+        width: 25%;
+        height: 156px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 2px solid rgb(251, 236, 190);
+        border-radius: 10px;
+        box-shadow: 0px 5px 8.82px 0.18px rgba(232, 190, 57, 0.9),0px -4px 6.93px 0.07px rgba(232, 190, 57, 0.7);
+        &:hover .svg-gearoption-dims{
+            opacity: 1;
+            fill: $accent;
+        }
+        &--vacant {
+            box-shadow: 0px 5px 8.82px 0.18px rgba(232, 90, 57, 0.5),0px -4px 6.93px 0.07px rgba(232, 90, 57, 0.2);
+        }
+    }
+    &__content-item + &__content-item {
+        margin-left: 20px;
+    }
+    &__content-option {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        & .svg-gearoption-dims {
+            width: 20px;
+            height: 20px;
+            opacity: .3;
+        }
+    }
+    &__title-wrapper {
+        padding: 12px 0 14px;
+        border-top: 1px solid #ededed;
+        width: 100%;
+    }
+    &__title {
+        margin: 0;
+        font-size: 14px;
+        font-family: $Myriad;
+        color: rgba(16, 16, 16, 0.949);
+        text-decoration: underline;
+        line-height: 1.571;
+        text-align: center;
+    }
+    &__content-icon-wrapper {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        & svg {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+@media (max-width: 1290px) {
+    .services-main {
+        flex-direction: column;
+        align-items: center;
+        &__banner,
+        &__banner-inner {
+            margin-bottom: 15px;
+        }
+        &__content-wrapper {
+            margin-bottom: 15px;
+        }
+        &__content-wrapper {
+            width:100%;
+            max-width: 670px;
+        }
+        &__content-item + &__content-item {
+            margin-left: 10px;
+        }
+        &__banner-inner {
+            max-width: 347px;
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 780px) {
+    .services-main {
+        &__content-wrapper {
+            width:100%;
+            max-width: 370px;
+        }
+        &__content-wrapper-row {
+            flex-wrap: wrap;
+            max-width: 370px;
+            width: 100%;
+        }
+        &__content-item {
+            max-width: 160px;
+            width: 100%;
+            margin: 10px;
+        }
+        &__content-wrapper-row + &__content-wrapper-row {
+            margin-top: 0;
+        }
+    }
+}
+@media (max-width: 410px) {
+    .services-main {
+        &__content-wrapper {
+            max-width: none;
+        }
+        &__content-wrapper-row  {
+            max-width: none;
+        }
+        &__content-item {
+            max-width: none;
+        }
+    }
+}

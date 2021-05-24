@@ -1,0 +1,108 @@
+.article-single {
+    &__title {
+        font-family: $Myriad;
+        font-size: 30px;
+        color: rgb(16, 16, 16);
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    &__header-info {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    &__image {
+        margin-bottom: 40px;
+    }
+    &__content-wrapper {
+        display: flex;
+    }
+    &__content-aside {
+        margin-left: 80px;
+        width: 70px;
+    }
+    &__content-aside-likes,
+    &__bookmark-wrapper {
+        width: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 18px 0;
+        border: 1px solid #dfdfdf;
+        border-radius: 20px;
+        margin-bottom: 18px;
+    }
+    &__bookmark-wrapper {
+        margin-bottom: 0;
+    }
+    &__aside-like {
+        display: flex;
+        align-items: center;
+        margin-bottom: 13px;
+        & svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            fill: #7cd19e;
+        }
+    }
+    &__aside-dislike {
+        display: flex;
+        align-items: center;
+        & svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            fill: #d9716a;
+        }
+    }
+    &__aside-like-count,
+    &__aside-dislike-count {
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    &__bookmark {
+        height: 22px;
+    }
+    &__bookmark svg {
+        fill: $black;
+        width: 22px;
+        height: 22px;
+    }
+    &__content {
+        margin-bottom: 10px;
+    }
+    &__article {
+        padding: 0 40px 0 30px;
+    }
+    &__share-after-article {
+        margin-bottom: 30px;
+    }
+    &__content-aside-likes svg {
+        cursor: pointer;
+    }
+}
+@media (max-width: 780px) {
+    .article-single {
+        &__content-aside {
+            display: none;
+        }
+        &__article {
+            padding: 0 15px;
+        }
+    }
+}
+@media (max-width: 680px) {
+    .article-single {
+        &__header {
+            flex-wrap: wrap;
+        }
+    }
+}
