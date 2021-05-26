@@ -150,7 +150,7 @@ gulp.task('svgSprite', function () {
         .pipe(
             svgSprite({
                 mode: {
-                    stack: {
+                    symbol: {
                         sprite: "../icons/icons.svg",
                         example: true
                     }

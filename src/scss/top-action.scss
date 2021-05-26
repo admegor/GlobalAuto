@@ -1,0 +1,13 @@
+.top-action {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 40px 10px 30px;
+    &__title {
+        font-size: 24px;
+        color: rgba(23, 23, 23, 0.902);
+        font-weight: bold;
+    }
+    &__subtitle {
+        font-size: 18px;
+    }
+}

@@ -45,36 +45,6 @@ a {
 .main-index {
     background-color: #404040;
 }
-
-.button {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-    &__rounded {
-        @include gradient(0);
-        padding: 10px 33px;
-        border: 2px solid #e6e6e6;
-        border-radius: 25px;
-        position: relative;
-        font-size: 14px;
-        color: rgba(35, 31, 32, 0.949);
-        font-weight: bold;
-        &:hover {
-            @include gradient-hover(0);
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            width: 82px;
-            height: 11px;
-            bottom: -5px;
-            left: calc(50% - 41px);
-            background: url("../img/services/effect-lighting-button.png") no-repeat center center;
-        }
-    }
-}
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -101,61 +71,6 @@ a {
 
 .main {
     background-color: #404040;
-}
-
-.button-header {
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    background: transparent;
-    font-size: 12px;
-    color: $white;
-    padding: 7px 10px 7px 38px;
-    text-transform: uppercase;
-    text-decoration: none;
-    @include transition-btn;
-    &:hover {
-        background-color: rgba(255, 255, 255, 0.089);
-    }
-    &--signup {
-        box-shadow: 0px 5px 8.82px 0.18px rgba(2, 12, 17, 0.2);
-        border-width: 2px;
-        background: linear-gradient( 0deg, rgb(238, 130, 24) 0%, rgb(238, 174, 25) 36%, rgb(247, 228, 114) 98%);
-        position: relative;
-        &::after {
-            content: " ";
-            position: absolute;
-            left: 14px;
-            top: 10px;
-            width: 16px;
-            height: 20px;
-            background-image: url("../img/icon-man.png");
-            background-repeat: no-repeat;
-        }
-        &:hover {
-            background: linear-gradient( 90deg, rgb(238, 130, 24) 0%, rgb(238, 174, 25) 36%, rgb(247, 228, 114) 98%);
-        }
-    }
-}
-
-.button-round {
-    padding: 15px 30px;
-    @include gradient(0);
-    border-radius: 30px;
-    border: 2px solid rgb(230, 230, 230);
-    box-shadow: 3.857px 4.596px 11.76px 0.24px rgba(2, 12, 17, 0.06);
-    position: relative;
-    &::after {
-        content: "";
-        position: absolute;
-        width: 82px;
-        height: 11px;
-        bottom: -5px;
-        left: calc(50% - 41px);
-        background: url("../img/services/effect-lighting-button.png") no-repeat center center;
-    }
-    &:hover {
-        @include gradient(90);
-    }
 }
 
 .toggle-access {

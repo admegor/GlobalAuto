@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Страница - отзывы</title>
+</head>
+<body>
+    @@include('_header.html')
+    <main class="main">
+        <section class="bread-crumbs">
+            <div class="container-inner">
+                <ul class="bread-crumbs__list">
+                    <li class="bread-crumbs__item">
+                        <a class="bread-crumbs__link" href="#">
+                            <span>
+                                <svg class="svg-home-dims">
+                                    <use xlink:href="#home"></use>
+                                </svg>
+                            </span>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="bread-crumbs__item">
+                        <span>
+                            <svg class="svg-breadcrumbs-right-arrow-dims">
+                                <use xlink:href="#breadcrumbs-right-arrow"></use>
+                            </svg>
+                        </span>
+                        <span class="bread-crumbs__link">отзывы</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="container-inner">
+            <div class="page-wrapper">
+                <div class="page-title">
+                    <h1 class="page-title__title">Отзывы</h1>
+                </div>
+                <secction class="page-tabs">
+                    <div class="page-tabs__wrapper">
+                        <button class="page-tabs__btn page-tabs__btn--active button">
+                            <span>
+                                <svg class="svg-like-active-dims">
+                                    <use xlink:href="#like-active"></use>
+                                </svg>
+                            </span>
+                            Лучшие отзывы
+                        </button>
+                        <button class="page-tabs__btn button">Последние отзывы</button>
+                        <button class="page-tabs__btn button">Рейтинг 4+</button>
+                        <button class="page-tabs__btn button">Рейтинг 3-</button>
+                    </div>
+                </secction>
+                <section class="top-action">
+                    <div class="top-action__wrapper">
+                        <div class="top-action__title">Хотите оставить свой отзыв?</div>
+                        <div class="top-action__subtitle">Выполните вход или заполните анкету для аутентификаци!</div>
+                        <a class="top-action__button button button__accent" href="#">Оставить отзыв</a>
+                    </div>
+                </section>
+                <div class="page-inner reviews__inner">
+                    <section class="reviews">
+                        <div class="reviews__wrapper">
+                            <div class="reviews__item">
+                                <div class="reviews__avatar-wrapper">
+                                    <img class="reviews__avatar-image" src="img/reviews-avatar.jpg" alt="Валентина Прокопьева">
+                                    <div class="reviews__date-wrapper">
+                                        <p class="reviews__date-text">Дата публикации</p>
+                                        <div class="reviews__date-info-wrapper">
+                                            <span>
+                                                <svg class="svg-wall-clock-dims">
+                                                    <use xlink:href="#wall-clock"></use>
+                                                </svg>
+                                            </span>
+                                            <time class="reviews__date-info" datetime="2020-11-21">21 ноября 2020</time>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__content-wrapper">
+                                    <div class="reviews__content-top">
+                                        <div class="reviews__content-top-person">
+                                            <div class="reviews__person-name">Валентина Прокопьева</div>
+                                            <div class="reviews__person-post">Обслуживание отдела «Битые авто»</div>
+                                        </div>
+                                        <div class="reviews__rate rate-reviews">
+                                            <div class="rate-reviews__wrapper">
+                                                <div class="rate-reviews__text">Рейтинг:</div>
+                                                <ol class="rate-reviews__stars-list">
+                                                    <li class="rate-reviews__stars-item rate-reviews__stars-item--active">
+                                                        <svg class="svg-rate-dims">
+                                                            <use xlink:href="#rate"></use>
+                                                        </svg>
+                                                    </li>
+                                                    <li class="rate-reviews__stars-item rate-reviews__stars-item--active">
+                                                        <svg class="svg-rate-dims">
+                                                            <use xlink:href="#rate"></use>
+                                                        </svg>
+                                                    </li>
+                                                    <li class="rate-reviews__stars-item rate-reviews__stars-item--active">
+                                                        <svg class="svg-rate-dims">
+                                                            <use xlink:href="#rate"></use>
+                                                        </svg>
+                                                    </li>
+                                                    <li class="rate-reviews__stars-item rate-reviews__stars-item--active">
+                                                        <svg class="svg-rate-dims">
+                                                            <use xlink:href="#rate"></use>
+                                                        </svg>
+                                                    </li>
+                                                    <li class="rate-reviews__stars-item">
+                                                        <svg class="svg-rate-dims">
+                                                            <use xlink:href="#rate"></use>
+                                                        </svg>
+                                                    </li>
+                                                </ol>
+                                                <div class="rate-reviews__count">4.0</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__content-middle">
+                                        <p>Я не мало написала о локальных точках эмирата Шарджа и хотелось бы уже посвятить этому арабскому населенному пункту развернутый отзыв, к тому же, у меня еще осталось много неопубликованного фото и видеоматериала, которым сильно хочется поделиться хотелось бы уже посвятить этому арабскому...</p>
+                                        <p class="reviews__content-title">Достоинства:</p>
+                                        <p>У меня еще осталось много неопубликованного фото и видеоматериала, которым сильно хочется поделиться хотелось
+                                            бы уже посвятить этому арабскому еще осталось много неопубликованного фото и видеоматериала.</p>
+                                        <p class="reviews__content-title">Недостатки:</p>
+                                        <p>У меня еще осталось много неопубликованного фото и видеоматериала.</p>
+                                    </div>
+                                    <div class="reviews__content-bottom">
+                                        <button class="reviews__view-all button">
+                                            <span>
+                                                <svg class="svg-eye-dims">
+                                                    <use xlink:href="#eye"></use>
+                                                </svg>
+                                            </span>
+                                            Развернуть ответ полностью
+                                        </button>
+                                        <div class="reviews__useful-wrapper">
+                                            <div class="reviews__useful-text">Был ли отзыв полезен для вас: </div>
+                                            <button class="reviews__useful-btn reviews__useful-btn--active button">
+                                                <svg class="svg-like-active-dims">
+                                                    <use xlink:href="#like-active"></use>
+                                                </svg>
+                                            </button>
+                                            <span class="reviews__useful-count reviews__useful-count--active">6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="page-pre-footer"></div>
+            </div>
+        </div>
+
+    </main>
+    @@include('_footer.html')
+</body>
+</html>

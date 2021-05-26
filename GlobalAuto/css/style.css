@@ -568,42 +568,6 @@ a {
   background-color: #404040;
 }
 
-.button {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: none;
-}
-
-.button__rounded {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a2a2a2), color-stop(33%, #cacaca), to(#fff));
-  background: -o-linear-gradient(bottom, #a2a2a2 0, #cacaca 33%, #fff 100%);
-  background: linear-gradient(0deg, #a2a2a2 0, #cacaca 33%, #fff 100%);
-  padding: 10px 33px;
-  border: 2px solid #e6e6e6;
-  border-radius: 25px;
-  position: relative;
-  font-size: 14px;
-  color: rgba(35, 31, 32, 0.949);
-  font-weight: bold;
-}
-
-.button__rounded:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#777777), color-stop(33%, #b2b2b2), to(#dbdbdb));
-  background: -o-linear-gradient(bottom, #777777 0%, #b2b2b2 33%, #dbdbdb 100%);
-  background: linear-gradient(0deg, #777777 0%, #b2b2b2 33%, #dbdbdb 100%);
-}
-
-.button__rounded::after {
-  content: "";
-  position: absolute;
-  width: 82px;
-  height: 11px;
-  bottom: -5px;
-  left: calc(50% - 41px);
-  background: url("../img/services/effect-lighting-button.png") no-repeat center center;
-}
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -630,79 +594,6 @@ a {
 
 .main {
   background-color: #404040;
-}
-
-.button-header {
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  background: transparent;
-  font-size: 12px;
-  color: #FFFFFF;
-  padding: 7px 10px 7px 38px;
-  text-transform: uppercase;
-  text-decoration: none;
-  -webkit-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-
-.button-header:hover {
-  background-color: rgba(255, 255, 255, 0.089);
-}
-
-.button-header--signup {
-  -webkit-box-shadow: 0px 5px 8.82px 0.18px rgba(2, 12, 17, 0.2);
-          box-shadow: 0px 5px 8.82px 0.18px rgba(2, 12, 17, 0.2);
-  border-width: 2px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ee8218), color-stop(36%, #eeae19), color-stop(98%, #f7e472));
-  background: -o-linear-gradient(bottom, #ee8218 0%, #eeae19 36%, #f7e472 98%);
-  background: linear-gradient(0deg, #ee8218 0%, #eeae19 36%, #f7e472 98%);
-  position: relative;
-}
-
-.button-header--signup::after {
-  content: " ";
-  position: absolute;
-  left: 14px;
-  top: 10px;
-  width: 16px;
-  height: 20px;
-  background-image: url("../img/icon-man.png");
-  background-repeat: no-repeat;
-}
-
-.button-header--signup:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#ee8218), color-stop(36%, #eeae19), color-stop(98%, #f7e472));
-  background: -o-linear-gradient(left, #ee8218 0%, #eeae19 36%, #f7e472 98%);
-  background: linear-gradient(90deg, #ee8218 0%, #eeae19 36%, #f7e472 98%);
-}
-
-.button-round {
-  padding: 15px 30px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a2a2a2), color-stop(33%, #cacaca), to(#fff));
-  background: -o-linear-gradient(bottom, #a2a2a2 0, #cacaca 33%, #fff 100%);
-  background: linear-gradient(0deg, #a2a2a2 0, #cacaca 33%, #fff 100%);
-  border-radius: 30px;
-  border: 2px solid #e6e6e6;
-  -webkit-box-shadow: 3.857px 4.596px 11.76px 0.24px rgba(2, 12, 17, 0.06);
-          box-shadow: 3.857px 4.596px 11.76px 0.24px rgba(2, 12, 17, 0.06);
-  position: relative;
-}
-
-.button-round::after {
-  content: "";
-  position: absolute;
-  width: 82px;
-  height: 11px;
-  bottom: -5px;
-  left: calc(50% - 41px);
-  background: url("../img/services/effect-lighting-button.png") no-repeat center center;
-}
-
-.button-round:hover {
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #a2a2a2), color-stop(33%, #cacaca), to(#fff));
-  background: -o-linear-gradient(left, #a2a2a2 0, #cacaca 33%, #fff 100%);
-  background: linear-gradient(90deg, #a2a2a2 0, #cacaca 33%, #fff 100%);
 }
 
 .toggle-access {
@@ -939,6 +830,130 @@ a {
 .page-pre-footer {
   background-color: #404040;
   height: 50px;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.button__accent {
+  display: inline-block;
+  padding: 13px 90px;
+  font-size: 16px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ee8218), color-stop(36%, #eeae19), color-stop(98%, #f7e472));
+  background: -o-linear-gradient(bottom, #ee8218 0%, #eeae19 36%, #f7e472 98%);
+  background: linear-gradient(0deg, #ee8218 0%, #eeae19 36%, #f7e472 98%);
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  -webkit-box-shadow: 3.214px 3.83px 8.82px 0.18px rgba(2, 12, 17, 0.15);
+          box-shadow: 3.214px 3.83px 8.82px 0.18px rgba(2, 12, 17, 0.15);
+}
+
+.button__rounded {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a2a2a2), color-stop(33%, #cacaca), to(#fff));
+  background: -o-linear-gradient(bottom, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  background: linear-gradient(0deg, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  padding: 10px 33px;
+  border: 2px solid #e6e6e6;
+  border-radius: 25px;
+  position: relative;
+  font-size: 14px;
+  color: rgba(35, 31, 32, 0.949);
+  font-weight: bold;
+}
+
+.button__rounded:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#777777), color-stop(33%, #b2b2b2), to(#dbdbdb));
+  background: -o-linear-gradient(bottom, #777777 0%, #b2b2b2 33%, #dbdbdb 100%);
+  background: linear-gradient(0deg, #777777 0%, #b2b2b2 33%, #dbdbdb 100%);
+}
+
+.button__rounded::after {
+  content: "";
+  position: absolute;
+  width: 82px;
+  height: 11px;
+  bottom: -5px;
+  left: calc(50% - 41px);
+  background: url("../img/services/effect-lighting-button.png") no-repeat center center;
+}
+
+.button-header {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  font-size: 12px;
+  color: #FFFFFF;
+  padding: 7px 10px 7px 38px;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.button-header:hover {
+  background-color: rgba(255, 255, 255, 0.089);
+}
+
+.button-header--signup {
+  -webkit-box-shadow: 0px 5px 8.82px 0.18px rgba(2, 12, 17, 0.2);
+          box-shadow: 0px 5px 8.82px 0.18px rgba(2, 12, 17, 0.2);
+  border-width: 2px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ee8218), color-stop(36%, #eeae19), color-stop(98%, #f7e472));
+  background: -o-linear-gradient(bottom, #ee8218 0%, #eeae19 36%, #f7e472 98%);
+  background: linear-gradient(0deg, #ee8218 0%, #eeae19 36%, #f7e472 98%);
+  position: relative;
+}
+
+.button-header--signup::after {
+  content: " ";
+  position: absolute;
+  left: 14px;
+  top: 10px;
+  width: 16px;
+  height: 20px;
+  background-image: url("../img/icon-man.png");
+  background-repeat: no-repeat;
+}
+
+.button-header--signup:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ee8218), color-stop(36%, #eeae19), color-stop(98%, #f7e472));
+  background: -o-linear-gradient(left, #ee8218 0%, #eeae19 36%, #f7e472 98%);
+  background: linear-gradient(90deg, #ee8218 0%, #eeae19 36%, #f7e472 98%);
+}
+
+.button-round {
+  padding: 15px 30px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a2a2a2), color-stop(33%, #cacaca), to(#fff));
+  background: -o-linear-gradient(bottom, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  background: linear-gradient(0deg, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  border-radius: 30px;
+  border: 2px solid #e6e6e6;
+  -webkit-box-shadow: 3.857px 4.596px 11.76px 0.24px rgba(2, 12, 17, 0.06);
+          box-shadow: 3.857px 4.596px 11.76px 0.24px rgba(2, 12, 17, 0.06);
+  position: relative;
+}
+
+.button-round::after {
+  content: "";
+  position: absolute;
+  width: 82px;
+  height: 11px;
+  bottom: -5px;
+  left: calc(50% - 41px);
+  background: url("../img/services/effect-lighting-button.png") no-repeat center center;
+}
+
+.button-round:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #a2a2a2), color-stop(33%, #cacaca), to(#fff));
+  background: -o-linear-gradient(left, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  background: linear-gradient(90deg, #a2a2a2 0, #cacaca 33%, #fff 100%);
 }
 
 /*===============================
@@ -3752,6 +3767,333 @@ a {
   border-radius: 0px;
 }
 
+.page-tabs__wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #a2a2a2), color-stop(33%, #cacaca), to(#fff));
+  background: -o-linear-gradient(top, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  background: linear-gradient(180deg, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 3px solid #e6e6e6;
+  border-bottom: 3px solid #e6e6e6;
+}
+
+.page-tabs__btn {
+  height: 60px;
+  padding: 0 18px;
+  position: relative;
+  font-size: 16px;
+  color: rgba(23, 23, 23, 0.6);
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.page-tabs__btn::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #e8be39;
+  opacity: 0;
+}
+
+.page-tabs__btn:hover::after {
+  opacity: 1;
+}
+
+.page-tabs__btn--active {
+  color: rgba(23, 23, 23, 0.949);
+}
+
+.page-tabs__btn--active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #e8be39;
+  opacity: 1;
+}
+
+.page-tabs__btn:hover {
+  color: rgba(23, 23, 23, 0.949);
+}
+
+.page-tabs__btn svg {
+  width: 27px;
+  height: 30px;
+  margin-right: 15px;
+  fill: #e8be39;
+}
+
+.top-action {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 40px 10px 30px;
+}
+
+.top-action__title {
+  font-size: 24px;
+  color: rgba(23, 23, 23, 0.902);
+  font-weight: bold;
+}
+
+.top-action__subtitle {
+  font-size: 18px;
+}
+
+.reviews__inner {
+  background-color: #f5f5f5;
+}
+
+.reviews__wrapper {
+  padding: 0 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews__item + .reviews__item {
+  margin-top: 20px;
+}
+
+.reviews__item {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__avatar-wrapper {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.reviews__avatar-image {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.reviews__date-text {
+  margin: 0;
+  font-size: 13px;
+  color: gray;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.reviews__date-info-wrapper svg {
+  width: 18px;
+  height: 18px;
+  fill: #ababab;
+}
+
+.reviews__date-info {
+  font-size: 16px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  color: #ababab;
+}
+
+.reviews__content-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.reviews__person-name {
+  font-size: 22px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  color: #101010;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.reviews__person-post {
+  font-size: 18px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  color: #a4a4a4;
+  font-weight: 300;
+}
+
+.reviews__content-middle {
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.reviews__content-title {
+  margin: 12px 0;
+  font-size: 18px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  color: #101010;
+  line-height: 1.444;
+  font-weight: 600;
+}
+
+.reviews__content-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__view-all svg {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+  fill: #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews__view-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  color: #dddddd;
+  font-weight: 600;
+}
+
+.reviews__view-all:hover {
+  color: #e8be39;
+}
+
+.reviews__view-all:hover svg {
+  fill: #e8be39;
+}
+
+.reviews__useful-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews__useful-text {
+  font-size: 16px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  color: #606060;
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+.reviews__useful-btn svg {
+  width: 23px;
+  height: 23px;
+  fill: #dddddd;
+}
+
+.reviews__useful-btn--active svg {
+  fill: #e8be39;
+  margin-right: 5px;
+}
+
+.reviews__useful-count {
+  color: #bbbbbb;
+  font-weight: 600;
+}
+
+.reviews__useful-count--active {
+  color: #e8be39;
+}
+
+.rate-reviews__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rate-reviews__text {
+  margin-right: 20px;
+  font-size: 16px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  color: #404040;
+  font-weight: 300;
+}
+
+.rate-reviews__stars-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 12px;
+}
+
+.rate-reviews__stars-item + .rate-reviews__stars-item {
+  margin-left: 7px;
+}
+
+.rate-reviews__stars-item svg {
+  width: 21px;
+  height: 21px;
+  fill: #dddddd;
+}
+
+.rate-reviews__stars-item--active svg {
+  fill: #e8be39;
+}
+
+.rate-reviews__count {
+  font-size: 16px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  color: #bbbbbb;
+  font-weight: 600;
+}
+
 @media (min-width: 640px) {
   .choices__list--dropdown .choices__item--selectable {
     padding-right: 100px;
@@ -4235,12 +4577,6 @@ a {
   }
 }
 
-.webp .button__rounded::after { background: url(../img/services/effect-lighting-button.webp) no-repeat center center; }
-
-.webp .button-header--signup::after { background-image: url(../img/icon-man.webp); }
-
-.webp .button-round::after { background: url(../img/services/effect-lighting-button.webp) no-repeat center center; }
-
 .webp .toggle-access__lock { background: url(../img/icon-lock.webp) no-repeat center center; }
 
 .webp .banner__wrapper { background: url(../img/bg-banners.webp); }
@@ -4250,6 +4586,12 @@ a {
 .webp .page-description { background: url(../img/bg-grey.webp); }
 
 .webp .page-info { background: url(../img/bg-grey.webp); }
+
+.webp .button__rounded::after { background: url(../img/services/effect-lighting-button.webp) no-repeat center center; }
+
+.webp .button-header--signup::after { background-image: url(../img/icon-man.webp); }
+
+.webp .button-round::after { background: url(../img/services/effect-lighting-button.webp) no-repeat center center; }
 
 .webp .header { background: url(../img/bg-header.webp) no-repeat center center; }
 
