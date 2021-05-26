@@ -8,11 +8,15 @@
         padding: 13px 90px;
         font-size: 16px;
         font-family: $Myriad;
+        font-weight: 600;
         @include accent-gradient(0);
         color: $white;
         border: 2px solid $white;
         border-radius: 5px;
         box-shadow: 3.214px 3.83px 8.82px 0.18px rgba(2, 12, 17, 0.15);
+        &:hover {
+            @include accent-gradient-hover(0);
+        }
     }
     &__rounded {
         @include gradient(0);

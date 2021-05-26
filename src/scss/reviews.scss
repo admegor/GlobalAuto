@@ -3,7 +3,7 @@
         background-color: #f5f5f5;
     }
     &__wrapper {
-        padding: 0 80px;
+        padding: 0 50px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -25,6 +25,7 @@
     &__avatar-image {
         max-width: 150px;
         margin-bottom: 20px;
+        border-radius: 10px;
     }
     &__date-text {
         margin: 0;
@@ -130,5 +131,11 @@
         &--active {
             color: $accent;
         }
+    }
+    &__banner-wrapper {
+        margin: 30px 0;
+    }
+    &__pagination {
+        padding: 50px 0;
     }
 }

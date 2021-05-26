@@ -6,8 +6,26 @@
         font-size: 24px;
         color: rgba(23, 23, 23, 0.902);
         font-weight: bold;
+        margin-bottom: 18px;
     }
     &__subtitle {
         font-size: 18px;
+        margin-bottom: 25px;
+    }
+    &__button {
+        font-size: 16px;
+        font-family: $Myriad;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        .Оставить_отзыв {
+            font-family: "Montserrat";
+            line-height: 3.625;
+            text-align: center;
+            position: absolute;
+            left: 889.938px;
+            top: 521.5px;
+            z-index: 311;
+          }
+          
     }
 }
