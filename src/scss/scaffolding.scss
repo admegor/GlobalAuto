@@ -262,6 +262,14 @@ a {
     background-color: #404040;
     height: 50px;
 }
+.content-title {
+    margin: 12px 0;
+    font-size: 18px;
+    font-family: $Myriad;
+    color: rgb(16, 16, 16);
+    line-height: 1.444;
+    font-weight: 600;
+}
 
 @media (max-width: 1200px) {
     .page-info {

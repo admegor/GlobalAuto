@@ -834,6 +834,15 @@ a {
   height: 50px;
 }
 
+.content-title {
+  margin: 12px 0;
+  font-size: 18px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  color: #101010;
+  line-height: 1.444;
+  font-weight: 600;
+}
+
 .button {
   margin: 0;
   padding: 0;
@@ -3983,15 +3992,6 @@ a {
   border-bottom: 1px solid #dfdfdf;
 }
 
-.reviews__content-title {
-  margin: 12px 0;
-  font-size: 18px;
-  font-family: "MyriadPro", "Arial", sans-serif;
-  color: #101010;
-  line-height: 1.444;
-  font-weight: 600;
-}
-
 .reviews__content-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4320,6 +4320,182 @@ a {
   background: linear-gradient(0deg, #c56b11 0%, #b68411 36%, #dfc951 98%);
 }
 
+.accordion-page-fullwidth__item + .accordion-page-fullwidth__item {
+  margin-top: 30px;
+}
+
+.accordion-page-fullwidth__title {
+  width: 100%;
+  min-height: 150px;
+  border-radius: 10px;
+  border: 4px solid #e6e6e6;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a2a2a2), color-stop(33%, #cacaca), to(#fff));
+  background: -o-linear-gradient(bottom, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  background: linear-gradient(0deg, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.accordion-page-fullwidth__title:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#b4b4b4), color-stop(33%, #bbbbbb), to(white));
+  background: -o-linear-gradient(bottom, #b4b4b4 0%, #bbbbbb 33%, white 100%);
+  background: linear-gradient(0deg, #b4b4b4 0%, #bbbbbb 33%, white 100%);
+}
+
+.accordion-page-fullwidth__title::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 25px;
+  bottom: -12px;
+  left: calc(50% - 115px);
+  background: url("../img/lighting-btn.png") no-repeat center center;
+}
+
+.accordion-page-fullwidth__title--active {
+  border-end-end-radius: 0;
+  border-end-start-radius: 0;
+}
+
+.accordion-page-fullwidth__title-wrap {
+  padding: 25px 40px;
+}
+
+.accordion-page-fullwidth__title-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.accordion-page-fullwidth__title-header {
+  padding: 18px 0;
+  padding-right: 20%;
+  font-size: 28px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  color: rgba(16, 16, 16, 0.949);
+  border-right: 1px solid #c5c5c5;
+}
+
+.accordion-page-fullwidth__title-info {
+  padding-left: 40px;
+  margin: 0 45px;
+  position: relative;
+  font-size: 16px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  color: #060606;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.accordion-page-fullwidth__title-info svg {
+  width: 18px;
+  height: 16px;
+  fill: #9d9c9d;
+  position: absolute;
+  left: 0;
+  top: 25%;
+}
+
+.accordion-page-fullwidth__title-info-count {
+  display: block;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.accordion-page-fullwidth__title-icon {
+  min-height: 150px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #c7c7c7), color-stop(33%, #dddddd), to(#fff));
+  background: -o-linear-gradient(bottom, #c7c7c7 0, #dddddd 33%, #fff 100%);
+  background: linear-gradient(0deg, #c7c7c7 0, #dddddd 33%, #fff 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.accordion-page-fullwidth__title-icon span {
+  height: 100%;
+}
+
+.accordion-page-fullwidth__title-icon svg {
+  width: 30px;
+  height: 20px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  fill: #8d9197;
+}
+
+.accordion-page-fullwidth__content {
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.page-programs__banner-wrapper {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+
+.page-programs__table {
+  max-width: 600px;
+}
+
+.content-table {
+  width: 100%;
+}
+
+.content-table caption {
+  font-weight: 600;
+  font-size: 20px;
+  color: #101010;
+  line-height: 1.3;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  padding: 15px 0;
+  border-bottom: 1px solid #e8be39;
+}
+
+.content-table td {
+  padding: 16px 15px;
+  font-size: 16px;
+  color: black;
+  line-height: 1.375;
+}
+
+.content-table td:nth-child(2n) {
+  text-align: end;
+}
+
+.content-table tr:nth-child(2n) {
+  background-color: #f5f5f5;
+}
+
+.content-table tr:last-child {
+  border-bottom: 2px solid #f5f5f5;
+}
+
 @media (min-width: 640px) {
   .choices__list--dropdown .choices__item--selectable {
     padding-right: 100px;
@@ -4511,6 +4687,26 @@ a {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
+
+  .reviews__wrapper {
+    padding: 0 5px;
+  }
+
+  .accordion-page-fullwidth__title {
+    min-height: 90px;
+  }
+
+  .accordion-page-fullwidth__title-wrap {
+    padding: 10px 15px;
+  }
+
+  .accordion-page-fullwidth__title-header {
+    padding: 8px 5px;
+  }
+
+  .accordion-page-fullwidth__title-icon {
+    min-height: 90px;
+  }
 }
 
 @media (max-width: 980px) {
@@ -4560,6 +4756,24 @@ a {
             flex-direction: column;
     padding: 10px;
   }
+
+  .accordion-page-fullwidth__title-header {
+    font-size: 18px;
+  }
+
+  .accordion-page-fullwidth__title-info {
+    padding-left: 25px;
+    margin: 0 20px;
+  }
+
+  .accordion-page-fullwidth__title-info {
+    white-space: normal;
+    margin: 0 5px;
+  }
+
+  .accordion-page-fullwidth__title-icon {
+    padding: 0 8px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -4588,6 +4802,66 @@ a {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin: 5px 0;
+  }
+
+  .page-tabs__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .reviews__item {
+    padding: 20px 10px;
+  }
+
+  .reviews__content-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .reviews__content-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .reviews__view-all {
+    margin-bottom: 10px;
+  }
+
+  .reviews__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .pagination-page__load-more {
+    padding: 0;
+  }
+
+  .pagination-page__wrapper {
+    height: 40px;
+  }
+
+  .pagination-page__item {
+    width: 50px;
+  }
+
+  .pagination-page__btn-prev,
+  .pagination-page__btn-next {
+    padding: 0 12px;
+  }
+
+  .pagination-page__item {
+    width: 30px;
   }
 }
 
@@ -4718,6 +4992,14 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+
+  .accordion-page-fullwidth__title-info svg {
+    display: none;
+  }
+
+  .accordion-page-fullwidth__title-info {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 670px) {
@@ -4786,6 +5068,18 @@ a {
 
   .calculator__button {
     max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination-page__btn-prev,
+  .pagination-page__btn-next {
+    padding: 0 4px;
+    font-size: 12px;
+  }
+
+  .pagination-page__item {
+    width: 25px;
   }
 }
 
@@ -4876,3 +5170,5 @@ a {
 .webp .choices[data-type*=select-one]:after{ background: url(../img/icon-arrow-select.webp) no-repeat center center; }
 
 .webp .pagination-page__load-more-btn::after{ background: url(../img/lighting-btn.webp) no-repeat center center; }
+
+.webp .accordion-page-fullwidth__title::after{ background: url(../img/lighting-btn.webp) no-repeat center center; }

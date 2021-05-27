@@ -69,14 +69,6 @@
         margin-bottom: 25px;
         border-bottom: 1px solid #dfdfdf;
     }
-    &__content-title {
-        margin: 12px 0;
-        font-size: 18px;
-        font-family: $Myriad;
-        color: rgb(16, 16, 16);
-        line-height: 1.444;
-        font-weight: 600;
-    }
     &__content-bottom {
         display: flex;
         justify-content: space-between;
@@ -137,5 +129,37 @@
     }
     &__pagination {
         padding: 50px 0;
+    }
+}
+@media (max-width: 1200px) {
+    .reviews {
+        &__wrapper {
+            padding: 0 5px;
+        }
+    }
+}
+@media (max-width: 880px) {
+    .reviews {
+        &__item {
+            padding: 20px 10px;
+
+        }
+        &__content-top {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__content-bottom {
+            flex-direction: column;
+        }
+        &__view-all {
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width: 880px) {
+    .reviews {
+        &__item {
+            flex-direction: column;
+        }
     }
 }

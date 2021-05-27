@@ -54,3 +54,10 @@
         }
     }
 }
+@media (max-width: 880px) {
+    .page-tabs {
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+}

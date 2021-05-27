@@ -27,6 +27,9 @@
 @mixin gradient ($deg: 45) {
     background: linear-gradient(#{$deg}deg,#a2a2a2 0,#cacaca 33%,#fff 100%);
 }
+@mixin gradient-light ($deg: 0) {
+    background: linear-gradient(#{$deg}deg,#c7c7c7 0,#dddddd 33%,#fff 100%);
+}
 @mixin gradient-hover ($deg: 0) {
     background: linear-gradient( #{$deg}deg, rgb(180, 180, 180) 0%, rgb(187, 187, 187) 33%, rgb(255, 255, 255) 100%);
 
