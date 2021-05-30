@@ -872,6 +872,28 @@ a {
   background: linear-gradient(0deg, #c56b11 0%, #b68411 36%, #dfc951 98%);
 }
 
+.button__secondary {
+  display: inline-block;
+  padding: 13px 90px;
+  font-size: 16px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  font-weight: 600;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a2a2a2), color-stop(33%, #cacaca), to(#fff));
+  background: -o-linear-gradient(bottom, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  background: linear-gradient(0deg, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  color: #101010;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  -webkit-box-shadow: 3.214px 3.83px 8.82px 0.18px rgba(2, 12, 17, 0.15);
+          box-shadow: 3.214px 3.83px 8.82px 0.18px rgba(2, 12, 17, 0.15);
+}
+
+.button__secondary:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#b4b4b4), color-stop(33%, #bbbbbb), to(white));
+  background: -o-linear-gradient(bottom, #b4b4b4 0%, #bbbbbb 33%, white 100%);
+  background: linear-gradient(0deg, #b4b4b4 0%, #bbbbbb 33%, white 100%);
+}
+
 .button__rounded {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a2a2a2), color-stop(33%, #cacaca), to(#fff));
   background: -o-linear-gradient(bottom, #a2a2a2 0, #cacaca 33%, #fff 100%);
@@ -899,6 +921,54 @@ a {
   bottom: -5px;
   left: calc(50% - 41px);
   background: url("../img/services/effect-lighting-button.png") no-repeat center center;
+}
+
+.button__file {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a2a2a2), color-stop(33%, #cacaca), to(#fff));
+  background: -o-linear-gradient(bottom, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  background: linear-gradient(0deg, #a2a2a2 0, #cacaca 33%, #fff 100%);
+  border: 3px solid #e5e5e5;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #3366bb;
+  max-width: 780px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 85px;
+  padding-left: 22px;
+  padding-right: 35px;
+  margin-bottom: 15px;
+}
+
+.button__file .svg-save-dims {
+  width: 17px;
+  height: 17px;
+  fill: #6f6f6f;
+  margin-right: 18px;
+}
+
+.button__file .svg-download-button-dims {
+  width: 18px;
+  height: 19px;
+  fill: #6f6f6f;
+  margin-left: auto;
+}
+
+.button__file-text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.button__file:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#b4b4b4), color-stop(33%, #bbbbbb), to(white));
+  background: -o-linear-gradient(bottom, #b4b4b4 0%, #bbbbbb 33%, white 100%);
+  background: linear-gradient(0deg, #b4b4b4 0%, #bbbbbb 33%, white 100%);
 }
 
 .button-header {
@@ -4326,7 +4396,6 @@ a {
 
 .accordion-page-fullwidth__title {
   width: 100%;
-  min-height: 150px;
   border-radius: 10px;
   border: 4px solid #e6e6e6;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a2a2a2), color-stop(33%, #cacaca), to(#fff));
@@ -4362,12 +4431,24 @@ a {
 
 .accordion-page-fullwidth__title-wrap {
   padding: 25px 40px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .accordion-page-fullwidth__title-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .accordion-page-fullwidth__title-header {
@@ -4397,6 +4478,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .accordion-page-fullwidth__title-info svg {
@@ -4416,7 +4499,6 @@ a {
 }
 
 .accordion-page-fullwidth__title-icon {
-  min-height: 150px;
   padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4452,6 +4534,45 @@ a {
   background-color: #FFFFFF;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.accordion-page-fullwidth__content-btn-wrap {
+  border-top: 1px solid #e3e3e3;
+  padding-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.accordion-page-fullwidth__content-btn-wrap .button + .button {
+  margin-left: 20px;
+}
+
+.accordion-page-fullwidth__title-year {
+  white-space: nowrap;
+  font-size: 30px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  color: rgba(6, 6, 6, 0.871);
+  font-weight: bold;
+}
+
+.accordion-page-fullwidth__running-line-wrap {
+  padding: 15px 0;
+}
+
+.accordion-page-fullwidth__running-line {
+  background-color: #FFFFFF;
+  padding: 15px 0;
+  border: 1px solid #c6c6c6;
+  -webkit-box-shadow: inset 2.571px 3.064px 6.93px 0.07px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 2.571px 3.064px 6.93px 0.07px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  color: #101010;
+}
+
+.page-strategy .accordion-page-fullwidth__title-info {
+  margin: 0;
 }
 
 .page-programs__banner-wrapper {
