@@ -1,0 +1,104 @@
+.form-offer {
+    &__wrapper {
+        border-radius: 0 0 10px 10px;
+        background-color: #f5f5f5;
+        padding: 30px;
+    }
+    &__form {
+        display: flex;
+    }
+    &__title {
+        text-align: center;
+        font-size: 20px;
+        font-family: $Myriad;
+        color: $white;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.35;
+        text-shadow: $textshadow;
+        padding: 23px 10px;
+        background: url("../img/bg-header.jpg") no-repeat center center;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    &__subtitle {
+        font-size: 12px;
+        color: $color-text;
+        line-height: 1.667;
+        text-align: center;
+        padding: 15px 10px;
+        border-bottom: 2px solid $white;
+        background-color: #f5f5f5;
+    }
+    &__col-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    &__col-wrap-inputs {
+        max-width: 250px;
+        margin-right: 20px;
+    }
+    &__col-wrap-textarea {
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        margin-right: 20px;
+    }
+    &__section-wrap {
+        display: flex;
+    }
+    &__section-wrap-drag-and-drop {
+        width: 210px;
+        margin-right: 20px;
+    }
+    &__col-wrap-drag-and-drop {
+        margin-right: 20px;
+    }
+    &__col-wrap-submit {
+        margin-top: 28px;
+    }
+    &__submit {
+        margin-bottom: 20px;
+    }
+    &__submit-text {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 12px;
+        color: $color-text;
+        line-height: 1.8;
+        max-width: 215px;
+        &-link {
+            color: $accent;
+        }
+    }
+}
+
+@media (max-width: 1320px) {
+    .form-offer {
+        &__form {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 780px) {
+    .form-offer {
+        &__section-wrap {
+            flex-direction: column;
+        }
+        &__col-wrap-inputs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: none;
+        }
+        &__input-wrap {
+            flex-shrink: 0;
+        }
+        &__col-wrap-textarea {
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.form {
+    &__input {
+        padding: 0 15px;
+        border-radius: 5px;
+        border: 2px solid #e6e6e6;
+        height: 40px;
+    }
+    &__label {
+        font-size: 15px;
+        font-family: $Myriad;
+        color: $color-text;
+        font-weight: 600;
+    }
+    &__input-wrap {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__textarea {
+        padding: 12px 15px;
+        border-radius: 5px;
+        border: 2px solid #e6e6e6;
+        resize: none;
+        width: 100%;
+        min-height: 200px;
+    }
+    &__drag-and-drop-zone {
+        padding: 20px 15px;
+        text-align: center;
+        border-radius: 5px;
+        border: 3px dashed $grey;
+        height: 200px;
+    }
+    &__drag-and-drop-text {
+        width: 210px;
+        font-size: 12px;
+        color: $color-text;
+        line-height: 1.5;
+        & span {
+            font-weight: 600;
+        }
+    }
+    &__drag-and-drop-button {
+        max-height: 34px;
+        padding: 0px 33px;
+        margin-top: 44px;
+        margin-bottom: 8px;
+    }
+}

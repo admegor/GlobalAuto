@@ -1,0 +1,55 @@
+.slider-text {
+    display: flex;
+    overflow: auto;
+    &__item:not(:last-child) {
+        padding-right: 30px;
+    }
+    &__item {
+        max-width: 345px;
+        flex-shrink: 0;
+    }
+    &__counter {
+        @include accent-gradient;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        font-family: $Myriad;
+        font-weight: 600;
+        border: 4px solid $grey;
+        z-index: 2;
+        position: relative;
+    }
+    &__counter-wrap {
+        position: relative;
+        margin-bottom: 25px;
+    }
+    &__counter-wrap span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $grey;
+        left: 60px;
+        top: 50%;
+        margin-left: -30px;
+    }
+    &__title {
+        margin-bottom: 35px;
+        position: relative;
+        color: $color-text;
+        font-family: $Myriad;
+        font-weight: bold;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -14px;
+            width: 30px;
+            height: 2px;
+            background-color: $accent;
+        }
+    }
+}
