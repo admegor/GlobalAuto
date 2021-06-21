@@ -1,0 +1,23 @@
+.btn-view-all {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: $Myriad;
+    color: #dddddd;
+    font-weight: 600;
+    &:hover {
+        color: $accent;
+    }
+    &:hover svg {
+        fill: $accent;
+    }
+    & svg {
+        width: 30px;
+        height: 20px;
+        margin-right: 10px;
+        fill: #dddddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

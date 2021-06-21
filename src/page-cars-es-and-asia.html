@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Страница - Автомобили ЕС и Азии</title>
+</head>
+<body>
+    @@include('_header.html')
+    <main class="main">
+        <section class="bread-crumbs">
+            <div class="container-inner">
+                <ul class="bread-crumbs__list">
+                    <li class="bread-crumbs__item">
+                        <a class="bread-crumbs__link" href="#">
+                            <span>
+                                <svg class="svg-home-dims">
+                                    <use xlink:href="#home"></use>
+                                </svg>
+                            </span>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="bread-crumbs__item">
+                        <span>
+                            <svg class="svg-breadcrumbs-right-arrow-dims">
+                                <use xlink:href="#breadcrumbs-right-arrow"></use>
+                            </svg>
+                        </span>
+                        <span class="bread-crumbs__link">Автомобили ЕС и Азии</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="container-inner--1820">
+            <div class="page-wrapper">
+                <div class="page-title page-title--cars">
+                    <h1 class="page-title__title">Автомобили ЕС и Азии</h1>
+                </div>
+                <div class="page-description">
+                    <p class="page-description__text">
+                        Краткое описание раздела и Текст вступления, написан для примера. Краткое описание раздела,
+                        текст вступления, написан для примера. Краткое описание раздела и Текст вступления, написан для примера.
+                        Краткое описание раздела и Текст вступления, написан для примера. 
+                    </p>
+                </div>
+                <section class="cars-filter">
+                    <div class="cars-filter__wrapper">
+                        <form class="cars-filter__form container-inner" action="">
+                                <div class="cars-filter__item-wrap">
+                                    <label for="country-origin">Страна изготовления:</label>
+                                    <select class="cars-filter__select" name="country-origin" id="country-origin">
+                                        <option value="ЕС">ЕС</option>
+                                        <option value="Азия">Азия</option>
+                                    </select>
+                                </div>
+                                <div class="cars-filter__item-wrap">
+                                    <label for="brand">Марка автомобиля:</label>
+                                    <select class="cars-filter__select" name="brand" id="brand">
+                                        <option value="all">Все</option>
+                                        <option value="BMW">BMW</option>
+                                        <option value="VW">VW</option>
+                                    </select>
+                                </div>
+                                <div class="cars-filter__item-wrap">
+                                    <label for="sort">Сортировать:</label>
+                                    <select class="cars-filter__select" name="sort" id="sort">
+                                        <option value="По популярности">По популярности</option>
+                                        <option value="По цене">По цене</option>
+                                        <option value="По новизне">По новизне</option>
+                                    </select>
+                                </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="cars-result">
+                    <div class="container-inner">
+                        <ul class="cars-result__list">
+                            <li class="cars-result__item">
+                                <div class="cars-result__item-wrap">
+                                    <a class="cars-result__link" href="#">
+                                        <img class="cars-result__image" src="img/cars-result-image.jpg" alt="">
+                                        <h3 class="cars-result__title">Mercedes-Benz GLE W167</h3>
+                                        <div class="cars-result__params">
+                                            <ul class="car-params">
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-engine-dims">
+                                                            <use xlink:href="#engine"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Бензиновый, 2.0, 200 л.с.
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-transmission-dims">
+                                                            <use xlink:href="#transmission"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Автоматическая
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-drive-dims">
+                                                            <use xlink:href="#drive"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Привод
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-fuel-dims">
+                                                            <use xlink:href="#fuel"></use>
+                                                        </svg>
+                                                    </span>
+                                                    8.9 / 11 / 7.7
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-speedometer-dims">
+                                                            <use xlink:href="#speedometer"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Полный
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </div>
+                                <div class="cars-result__more">
+                                    Подробнее
+                                </div>
+                                </a>
+                            </li>
+                            <li class="cars-result__item">
+                                <div class="cars-result__item-wrap">
+                                    <a class="cars-result__link" href="#">
+                                        <img class="cars-result__image" src="img/cars-result-image.jpg" alt="">
+                                        <h3 class="cars-result__title">Mercedes-Benz GLE W167</h3>
+                                        <div class="cars-result__params">
+                                            <ul class="car-params">
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-engine-dims">
+                                                            <use xlink:href="#engine"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Бензиновый, 2.0, 200 л.с.
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-transmission-dims">
+                                                            <use xlink:href="#transmission"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Автоматическая
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-drive-dims">
+                                                            <use xlink:href="#drive"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Привод
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-fuel-dims">
+                                                            <use xlink:href="#fuel"></use>
+                                                        </svg>
+                                                    </span>
+                                                    8.9 / 11 / 7.7
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-speedometer-dims">
+                                                            <use xlink:href="#speedometer"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Полный
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </div>
+                                <div class="cars-result__more">
+                                    Подробнее
+                                </div>
+                                </a>
+                            </li>
+                            <li class="cars-result__item">
+                                <div class="cars-result__item-wrap">
+                                    <a class="cars-result__link" href="#">
+                                        <img class="cars-result__image" src="img/cars-result-image.jpg" alt="">
+                                        <h3 class="cars-result__title">Mercedes-Benz GLE W167</h3>
+                                        <div class="cars-result__params">
+                                            <ul class="car-params">
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-engine-dims">
+                                                            <use xlink:href="#engine"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Бензиновый, 2.0, 200 л.с.
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-transmission-dims">
+                                                            <use xlink:href="#transmission"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Автоматическая
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-drive-dims">
+                                                            <use xlink:href="#drive"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Привод
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-fuel-dims">
+                                                            <use xlink:href="#fuel"></use>
+                                                        </svg>
+                                                    </span>
+                                                    8.9 / 11 / 7.7
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-speedometer-dims">
+                                                            <use xlink:href="#speedometer"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Полный
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </div>
+                                <div class="cars-result__more">
+                                    Подробнее
+                                </div>
+                                </a>
+                            </li>
+                            <li class="cars-result__item">
+                                <div class="cars-result__item-wrap">
+                                    <a class="cars-result__link" href="#">
+                                        <img class="cars-result__image" src="img/cars-result-image.jpg" alt="">
+                                        <h3 class="cars-result__title">Mercedes-Benz GLE W167</h3>
+                                        <div class="cars-result__params">
+                                            <ul class="car-params">
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-engine-dims">
+                                                            <use xlink:href="#engine"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Бензиновый, 2.0, 200 л.с.
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-transmission-dims">
+                                                            <use xlink:href="#transmission"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Автоматическая
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-drive-dims">
+                                                            <use xlink:href="#drive"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Привод
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-fuel-dims">
+                                                            <use xlink:href="#fuel"></use>
+                                                        </svg>
+                                                    </span>
+                                                    8.9 / 11 / 7.7
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-speedometer-dims">
+                                                            <use xlink:href="#speedometer"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Полный
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </div>
+                                <div class="cars-result__more">
+                                    Подробнее
+                                </div>
+                                </a>
+                            </li>
+                            <li class="cars-result__item">
+                                <div class="cars-result__item-wrap">
+                                    <a class="cars-result__link" href="#">
+                                        <img class="cars-result__image" src="img/cars-result-image.jpg" alt="">
+                                        <h3 class="cars-result__title">Mercedes-Benz GLE W167</h3>
+                                        <div class="cars-result__params">
+                                            <ul class="car-params">
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-engine-dims">
+                                                            <use xlink:href="#engine"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Бензиновый, 2.0, 200 л.с.
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-transmission-dims">
+                                                            <use xlink:href="#transmission"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Автоматическая
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-drive-dims">
+                                                            <use xlink:href="#drive"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Привод
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-fuel-dims">
+                                                            <use xlink:href="#fuel"></use>
+                                                        </svg>
+                                                    </span>
+                                                    8.9 / 11 / 7.7
+                                                </li>
+                                                <li class="car-params__item">
+                                                    <span>
+                                                        <svg class="svg-speedometer-dims">
+                                                            <use xlink:href="#speedometer"></use>
+                                                        </svg>
+                                                    </span>
+                                                    Полный
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </div>
+                                <div class="cars-result__more">
+                                    Подробнее
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="page-inner page-inner--bg">
+                    <div class="page-content__wrapper page-content--w">
+                    </div>
+                    <div class="banner__inner">
+                        <div class="banner__wrapper banner__wrapper--triple">
+                            <div class="banner banner--triple"><a href="#">Баннер</a></div>
+                            <div class="banner banner--triple"><a href="#">Баннер</a></div>
+                            <div class="banner banner--triple"><a href="#">Баннер</a></div>
+                        </div>
+                    </div>
+                    <div class="reviews__pagination pagination-page">
+                        <div class="pagination-page__wrapper">
+                            <a class="pagination-page__btn-prev pagination-page__btn-prev--disabled button" href="#" disabled>
+                                <span>
+                                    <svg class="svg-fast-forward-dims">
+                                        <use xlink:href="#fast-forward"></use>
+                                    </svg>
+                                </span>
+                                Назад
+                            </a>
+                            <ol class="pagination-page__list">
+                                <li class="pagination-page__item pagination-page__item--active">
+                                    <a class="pagination-page__link" href="#">1</a>
+                                </li>
+                                <li class="pagination-page__item">
+                                    <a class="pagination-page__link" href="#">2</a>
+                                </li>
+                                <li class="pagination-page__item">
+                                    <a class="pagination-page__link" href="#">3</a>
+                                </li>
+                                <li class="pagination-page__item">
+                                    <a class="pagination-page__link" href="#">4</a>
+                                </li>
+                                <li class="pagination-page__item">
+                                    <a class="pagination-page__link" href="#">...</a>
+                                </li>
+                                <li class="pagination-page__item">
+                                    <a class="pagination-page__link" href="#">16</a>
+                                </li>
+                            </ol>
+                            <a class="pagination-page__btn-next button" href="#">
+                                Вперед
+                                <span>
+                                    <svg class="svg-fast-forward-dims">
+                                        <use xlink:href="#fast-forward"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-pre-footer"></div>
+            </div>
+        </div>
+    </main>
+    @@include('_footer.html')
+</body>
+</html>

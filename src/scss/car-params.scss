@@ -1,0 +1,19 @@
+.car-params {
+    @include list-reset;
+    &__item + &__item {
+        margin-top: 12px;
+    }
+    &__item {
+        display: flex;
+        & span {
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            & svg {
+                width: 30px;
+                height: 20px;
+                fill: #9a9a9a;
+            }
+        }
+    }
+}

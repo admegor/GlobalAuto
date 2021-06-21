@@ -1,0 +1,36 @@
+.personal {
+    display: flex;
+    align-items: center;
+    &__avatar {
+        margin-right: 20px;
+    }
+    &__avatar-image {
+        border-radius: 50%;
+        max-width: 56px;
+        max-height: 56px;
+    }
+    &__name {
+        font-size: 22px;
+        font-family: $Myriad;
+        color: rgb(16, 16, 16);
+        font-weight: 600;
+    }
+    &__post {
+        font-size: 18px;
+        font-family: $Myriad;
+        color: rgb(164, 164, 164);
+    }
+}
+@media (max-width: 980px) {
+    .personal {
+        &__avatar {
+            margin-right: 10px;
+        }
+        &__name {
+            font-size: 18px;
+        }
+        &__post {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.customs-calc {
+    & .choices[data-type*=select-one]:before {
+        content: none;
+    }
+    & .choices[data-type*=select-one].is-open:after {
+        margin-top: -5px;
+        transform: rotate(180deg);
+    }
+}

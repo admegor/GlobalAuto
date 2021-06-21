@@ -57,6 +57,18 @@ a {
     padding: 0 10px;
 }
 
+.container-text {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.container-inner--1820 {
+    max-width: 1850px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .container-article-wrap {
     max-width: 880px;
     margin: 0 auto;
@@ -134,6 +146,10 @@ a {
 .banner {
     border-radius: 3px;
     background-color: rgb(128, 128, 128);
+    &__inner {
+        background-color: #f5f5f5;
+        padding: 40px 0;
+    }
     &__wrapper {
         background: url("../img/bg-banners.jpg");
         &--triple {
@@ -191,6 +207,10 @@ a {
     background-size: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    &--cars {
+        padding: 60px 0;
+        background-image: url("../img/bg-header-cars.jpg");
+    }
     &__title {
         font-size: 32px;
         font-weight: bold;
@@ -206,6 +226,7 @@ a {
     border-bottom: 1px solid #919191;
     &__text {
         margin: 0 auto;
+        padding: 0 15px;
         max-width: 910px;
         font-size: 15px;
         color: $white;
@@ -257,6 +278,9 @@ a {
     background-color: $white;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    &--bg {
+        background-color: #f5f5f5;
+    }
 }
 .page-pre-footer {
     background-color: #404040;

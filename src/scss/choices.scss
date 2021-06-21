@@ -152,6 +152,7 @@
   font-size: 14px;
   min-height: 44px;
   overflow: hidden;
+  border-width: 0px;
 }
 
 .is-focused .choices__inner,
@@ -279,7 +280,7 @@
 
 @media (min-width: 640px) {
   .choices__list--dropdown .choices__item--selectable {
-    padding-right: 100px;
+    // padding-right: 100px;
   }
   .choices__list--dropdown .choices__item--selectable:after {
     content: attr(data-select-text);
@@ -373,5 +374,6 @@
 .choices__placeholder {
   opacity: 0.5;
 }
+
 
 /*=====  End of Choices  ======*/

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Страница - таможня калькулятор</title>
+</head>
+<body>
+    @@include('_header.html')
+    <main class="main">
+        <section class="bread-crumbs">
+            <div class="container-inner">
+                <ul class="bread-crumbs__list">
+                    <li class="bread-crumbs__item">
+                        <a class="bread-crumbs__link" href="#">
+                            <span>
+                                <svg class="svg-home-dims">
+                                    <use xlink:href="#home"></use>
+                                </svg>
+                            </span>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="bread-crumbs__item">
+                        <span>
+                            <svg class="svg-breadcrumbs-right-arrow-dims">
+                                <use xlink:href="#breadcrumbs-right-arrow"></use>
+                            </svg>
+                        </span>
+                        <span class="bread-crumbs__link">Таможня</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="container-inner">
+            <div class="page-wrapper">
+                <div class="page-title">
+                    <h1 class="page-title__title">Таможня</h1>
+                </div>
+                <div class="page-description">
+                    <p class="page-description__text">
+                        Краткое описание раздела и Текст вступления, написан для примера. Краткое описание раздела,
+                        текст вступления, написан для примера. Краткое описание раздела и Текст вступления, написан для примера.
+                        Краткое описание раздела и Текст вступления, написан для примера. 
+                    </p>
+                </div>
+                <div class="page-info">
+                    <div class="page-info__wrapper">
+                        <div class="page-info__item page-info__item--warning">
+                            <p class="page-info__title">Предупреждение</p>
+                            <p class="page-info__description">Текст, описывающий смысл данного баннера. Текст, смысл данного баннера который писывает.</p>
+                        </div>
+                        <div class="page-info__item page-info__item--important">
+                            <p class="page-info__title">Важно</p>
+                            <p class="page-info__description">Текст, описывающий смысл данного баннера. </p>
+                        </div>
+                        <div class="page-info__item page-info__item--know">
+                            <p class="page-info__title">Нужно знать</p>
+                            <p class="page-info__description">Текст, описывающий смысл данного баннера. Текст, смысл данного баннера который писывает. Cмысл данного описывающий смысл данного...</p>
+                        </div>
+                    </div>
+                </div>
+                <section class="page-tabs">
+                    <div class="page-tabs__wrapper">
+                        <button class="page-tabs__btn button">
+                            <span>
+                                <svg class="svg-like-active-dims">
+                                    <use xlink:href="#like-active"></use>
+                                </svg>
+                            </span>
+                            Самые полезные ответы
+                        </button>
+                        <button class="page-tabs__btn button">Последние ответы</button>
+                        <button class="page-tabs__btn page-tabs__btn--active button">
+                            <span>
+                                <svg class="svg-calculator-dims">
+                                    <use xlink:href="#calculator"></use>
+                                </svg>
+                            </span>
+                            Таможенный калькулятор
+                        </button>
+                    </div>
+                </section>
+                <section class="top-action">
+                    <div class="top-action__wrapper">
+                        <div class="top-action__title">Онлайн калькулятор растаможки авто в России</div>
+                        <div class="top-action__subtitle">Рассчитайте стоимость растаможки автомобиля из Европы в 2020 году<br>
+                            с помощью нашего онлайн калькулятора таможенных платежей</div>
+                    </div>
+                </section>
+                <section class="page-inner page-inner--bg">
+                    <div class="page-content__wrapper page-content--w">
+                        <div class="page-content__tabs calc-tabs page-customs-calc__calc-tabs">
+                            <div class="calc-tabs__triggers">
+                                <a href="#calc-tab-1" class="calc-tabs__triggers-item calc-tabs__triggers-item--active">
+                                    <svg class="svg-automobile-dims">
+                                        <use xlink:href="#automobile"></use>
+                                    </svg>
+                                    Легковой
+                                </a>
+                                <a href="#calc-tab-2" class="calc-tabs__triggers-item">
+                                    <svg class="svg-motorbike-dims">
+                                        <use xlink:href="#motorbike"></use>
+                                    </svg>
+                                    Мото
+                                </a>
+                                <a href="#calc-tab-3" class="calc-tabs__triggers-item">
+                                    <svg class="svg-truck-dims">
+                                        <use xlink:href="#truck"></use>
+                                    </svg>
+                                    Грузовые
+                                </a>
+                                <a href="#calc-tab-4" class="calc-tabs__triggers-item">
+                                    <svg class="svg-buss-dims">
+                                        <use xlink:href="#buss"></use>
+                                    </svg>
+                                    Автобусы
+                                </a>
+                            </div>
+                            <div class="calc-tabs__content">
+                                <div id="calc-tab-1" class="calc-tabs__content-item calc-tabs__content-item--active">
+                                    <form class="calc-tabs__form customs-calc" action="">
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="fuel">Топливо:</label>
+                                            <select class="form__select" name="fuel" id="fuel">
+                                                <option value="Бензин">Бензин</option>
+                                                <option value="Дизель">Дизель</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="country-origin">Страна происхождения:</label>
+                                            <select class="form__select" name="country-origin" id="country-origin">
+                                                <option value="Любая">Любая</option>
+                                                <option value="Россия">Россия</option>
+                                                <option value="США">США</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="year-release">Год выпуска</label>
+                                            <select class="form__select" name="year-release" id="year-release">
+                                                <option value="2001">2001</option>
+                                                <option value="2002">2002</option>
+                                                <option value="2003">2003</option>
+                                                <option value="2004">2004</option>
+                                                <option value="2005">2005</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="country-origin">Объем двигателя дм<sub>3</sub></label>
+                                            <select class="form__select" name="country-origin" id="country-origin">
+                                                <option value="2.0">2.0</option>
+                                                <option value="2.2">2.2</option>
+                                                <option value="2.4">2.4</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="country-origin">Стоимость автомобиля:</label>
+                                            <div class="form__double-wrap">
+                                                <input class="form__double-wrap-text" type="text">
+                                                <select class="form__select form__double-wrap-select" name="currency" id="currency">
+                                                    <option value="USD">USD</option>
+                                                    <option value="RUR">RUR</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="calc-tabs__form-result customs-calc-result">
+                                        <table class="content-table">
+                                            <tr>
+                                                <th>Услуга</th>
+                                                <th>Старые тарифы</th>
+                                                <th class="content-table--new">Новые тарифы</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Цена с растаможкой</td>
+                                                <td>$31 300</td>
+                                                <td class="content-table--new">$31 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>НДС</td>
+                                                <td>$312 300</td>
+                                                <td class="content-table--new">$312 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Пошлина</td>
+                                                <td>$31 300</td>
+                                                <td class="content-table--new">$31 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Акцизный сбор</td>
+                                                <td>$312 300</td>
+                                                <td class="content-table--new">$312 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Всего таможенных платежей</td>
+                                                <td>$31 300</td>
+                                                <td class="content-table--new">$31 300</td>
+                                            </tr>
+                                        </table>
+                                        <table class="content-table">
+                                            <tr>
+                                                <th>Дополнительные расходы</th>
+                                                <th>&nbsp;</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Цена с растаможкой</td>
+                                                <td>$31 300</td>
+                                                <td>$31 300</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="calc-tab-2" class="calc-tabs__content-item">
+                                    <form class="calc-tabs__form customs-calc" action="">
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="fuel">Топливо:</label>
+                                            <select class="form__select" name="fuel" id="fuel">
+                                                <option value="Бензин">Бензин</option>
+                                                <option value="Дизель">Дизель</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="country-origin">Страна происхождения:</label>
+                                            <select class="form__select" name="country-origin" id="country-origin">
+                                                <option value="Любая">Любая</option>
+                                                <option value="Россия">Россия</option>
+                                                <option value="США">США</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="year-release">Год выпуска</label>
+                                            <select class="form__select" name="year-release" id="year-release">
+                                                <option value="2001">2001</option>
+                                                <option value="2002">2002</option>
+                                                <option value="2003">2003</option>
+                                                <option value="2004">2004</option>
+                                                <option value="2005">2005</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="country-origin">Объем двигателя дм<sub>3</sub></label>
+                                            <select class="form__select" name="country-origin" id="country-origin">
+                                                <option value="2.0">2.0</option>
+                                                <option value="2.2">2.2</option>
+                                                <option value="2.4">2.4</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="country-origin">Стоимость автомобиля:</label>
+                                            <div class="form__double-wrap">
+                                                <input class="form__double-wrap-text" type="text">
+                                                <select class="form__select form__double-wrap-select" name="currency" id="currency">
+                                                    <option value="USD">USD</option>
+                                                    <option value="RUR">RUR</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="calc-tabs__form-result customs-calc-result">
+                                        <table class="content-table">
+                                            <tr>
+                                                <th>Услуга</th>
+                                                <th>Старые тарифы</th>
+                                                <th class="content-table--new">Новые тарифы</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Цена с растаможкой</td>
+                                                <td>$312 300</td>
+                                                <td class="content-table--new">$31 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>НДС</td>
+                                                <td>$31 300</td>
+                                                <td class="content-table--new">$312 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Пошлина</td>
+                                                <td>$312 300</td>
+                                                <td class="content-table--new">$31 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Акцизный сбор</td>
+                                                <td>$31 300</td>
+                                                <td class="content-table--new">$312 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Всего таможенных платежей</td>
+                                                <td>$31 300</td>
+                                                <td class="content-table--new">$31 300</td>
+                                            </tr>
+                                        </table>
+                                        <table class="content-table">
+                                            <tr>
+                                                <th>Дополнительные расходы</th>
+                                                <th>&nbsp;</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Цена с растаможкой</td>
+                                                <td>$31 300</td>
+                                                <td>$31 300</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="calc-tab-3" class="calc-tabs__content-item">
+                                    <form class="calc-tabs__form customs-calc" action="">
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="fuel">Топливо:</label>
+                                            <select class="form__select" name="fuel" id="fuel">
+                                                <option value="Бензин">Бензин</option>
+                                                <option value="Дизель">Дизель</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="country-origin">Страна происхождения:</label>
+                                            <select class="form__select" name="country-origin" id="country-origin">
+                                                <option value="Любая">Любая</option>
+                                                <option value="Россия">Россия</option>
+                                                <option value="США">США</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="year-release">Год выпуска</label>
+                                            <select class="form__select" name="year-release" id="year-release">
+                                                <option value="2001">2001</option>
+                                                <option value="2002">2002</option>
+                                                <option value="2003">2003</option>
+                                                <option value="2004">2004</option>
+                                                <option value="2005">2005</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="country-origin">Объем двигателя дм<sub>3</sub></label>
+                                            <select class="form__select" name="country-origin" id="country-origin">
+                                                <option value="2.0">2.0</option>
+                                                <option value="2.2">2.2</option>
+                                                <option value="2.4">2.4</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="country-origin">Стоимость автомобиля:</label>
+                                            <div class="form__double-wrap">
+                                                <input class="form__double-wrap-text" type="text">
+                                                <select class="form__select form__double-wrap-select" name="currency" id="currency">
+                                                    <option value="USD">USD</option>
+                                                    <option value="RUR">RUR</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="calc-tabs__form-result customs-calc-result">
+                                        <table class="content-table">
+                                            <tr>
+                                                <th>Услуга</th>
+                                                <th>Старые тарифы</th>
+                                                <th class="content-table--new">Новые тарифы</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Цена с растаможкой</td>
+                                                <td>$31 300</td>
+                                                <td class="content-table--new">$31 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>НДС</td>
+                                                <td>$312 300</td>
+                                                <td class="content-table--new">$312 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Пошлина</td>
+                                                <td>$31 300</td>
+                                                <td class="content-table--new">$31 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Акцизный сбор</td>
+                                                <td>$312 300</td>
+                                                <td class="content-table--new">$312 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Всего таможенных платежей</td>
+                                                <td>$31 300</td>
+                                                <td class="content-table--new">$31 300</td>
+                                            </tr>
+                                        </table>
+                                        <table class="content-table">
+                                            <tr>
+                                                <th>Дополнительные расходы</th>
+                                                <th>&nbsp;</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Цена с растаможкой</td>
+                                                <td>$31 300</td>
+                                                <td>$31 300</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="calc-tab-4" class="calc-tabs__content-item">
+                                    <form class="calc-tabs__form customs-calc" action="">
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="fuel">Топливо:</label>
+                                            <select class="form__select" name="fuel" id="fuel">
+                                                <option value="Бензин">Бензин</option>
+                                                <option value="Дизель">Дизель</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="country-origin">Страна происхождения:</label>
+                                            <select class="form__select" name="country-origin" id="country-origin">
+                                                <option value="Любая">Любая</option>
+                                                <option value="Россия">Россия</option>
+                                                <option value="США">США</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="year-release">Год выпуска</label>
+                                            <select class="form__select" name="year-release" id="year-release">
+                                                <option value="2001">2001</option>
+                                                <option value="2002">2002</option>
+                                                <option value="2003">2003</option>
+                                                <option value="2004">2004</option>
+                                                <option value="2005">2005</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="country-origin">Объем двигателя дм<sub>3</sub></label>
+                                            <select class="form__select" name="country-origin" id="country-origin">
+                                                <option value="2.0">2.0</option>
+                                                <option value="2.2">2.2</option>
+                                                <option value="2.4">2.4</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <label class="form__label" for="country-origin">Стоимость автомобиля:</label>
+                                            <div class="form__double-wrap">
+                                                <input class="form__double-wrap-text" type="text">
+                                                <select class="form__select form__double-wrap-select" name="currency" id="currency">
+                                                    <option value="USD">USD</option>
+                                                    <option value="RUR">RUR</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="calc-tabs__form-result customs-calc-result">
+                                        <table class="content-table">
+                                            <tr>
+                                                <th>Услуга</th>
+                                                <th>Старые тарифы</th>
+                                                <th class="content-table--new">Новые тарифы</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Цена с растаможкой</td>
+                                                <td>$31 300</td>
+                                                <td class="content-table--new">$31 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>НДС</td>
+                                                <td>$312 300</td>
+                                                <td class="content-table--new">$312 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Пошлина</td>
+                                                <td>$31 300</td>
+                                                <td class="content-table--new">$31 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Акцизный сбор</td>
+                                                <td>$312 300</td>
+                                                <td class="content-table--new">$312 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Всего таможенных платежей</td>
+                                                <td>$31 300</td>
+                                                <td class="content-table--new">$31 300</td>
+                                            </tr>
+                                        </table>
+                                        <table class="content-table">
+                                            <tr>
+                                                <th>Дополнительные расходы</th>
+                                                <th>&nbsp;</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Цена с растаможкой</td>
+                                                <td>$31 300</td>
+                                                <td>$31 300</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-customs-calc__bottom">
+                            <div class="page-customs-calc__link-wrap">
+                                <div class="page-customs-calc__icon-wrap">
+                                    <svg class="svg-documents-dims">
+                                        <use xlink:href="#documents"></use>
+                                    </svg>
+                                </div>
+                                <a class="page-customs-calc__link" href="#">Документы необходимые для
+                                    таможенного оформления</a>
+                            </div>
+                            <div class="page-customs-calc__link-wrap">
+                                <div class="page-customs-calc__icon-wrap">
+                                    <svg class="svg-price-dims">
+                                        <use xlink:href="#price"></use>
+                                    </svg>
+                                </div>
+                                <a class="page-customs-calc__link" href="#">Примеры расчета
+                                    стоимости растаможки</a>
+                            </div>
+                            <div class="page-customs-calc__link-wrap">
+                                <div class="page-customs-calc__icon-wrap">
+                                    <svg class="svg-news-dims">
+                                        <use xlink:href="#news"></use>
+                                    </svg>
+                                </div>
+                                <a class="page-customs-calc__link" href="#">Новости по растаможке
+                                    автомобилей</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__inner">
+                        <div class="banner__wrapper banner__wrapper--triple">
+                            <div class="banner banner--triple"><a href="#">Баннер</a></div>
+                            <div class="banner banner--triple"><a href="#">Баннер</a></div>
+                            <div class="banner banner--triple"><a href="#">Баннер</a></div>
+                        </div>
+                    </div>
+                </section>
+                <div class="page-pre-footer"></div>
+            </div>
+        </div>
+    </main>
+    @@include('_footer.html')
+</body>
+</html>

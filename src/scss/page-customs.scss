@@ -1,0 +1,103 @@
+.page-customs {
+    padding: 0 80px;
+    &__item {
+        padding: 30px;
+        &:hover {
+            box-shadow: 0px 5px 11.76px 0.24px rgba(2, 12, 17, 0.1);
+        }
+    }
+    &__item + &__item {
+        margin-top: 20px;
+    }
+    &__top {
+        display: flex;
+    }
+    &__name {
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+        &::after {
+            content: "•";
+            margin-left: 15px;
+            right: 12px;
+            top: 5px;
+        }
+        & svg {
+            width: 18px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    }
+    &__date {
+        display: flex;
+        align-items: center;
+        color: #ababab;
+        & svg {
+            fill: #ababab;
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+    }
+    &__question {
+        padding-bottom: 20px;
+    }
+    &__question-text {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.445;
+    }
+    &__answer-wrap {
+        border-top: 1px solid #cccccc;
+    }
+    &__answer-spec-title {
+        padding-top: 20px;
+        margin: 0;
+        font-size: 16px;
+        font-family: $Myriad;
+        color: rgb(96, 96, 96);
+        text-transform: uppercase;
+    }
+    &__answer-text {
+        
+    }
+    &__answer-inner {
+        padding: 20px;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        border-top: 1px solid #f4f4f4;
+    }
+    &__view-all {
+        margin-bottom: 24px;
+    }
+}
+@media (max-width: 980px) {
+    .page-customs {
+        &__bottom,
+        &__top {
+            flex-direction: column;
+        }
+        &__name {
+            margin-bottom: 10px;
+            &::after {
+                content: none;
+            }
+        }
+        &__useful-wrapper {
+            margin-bottom: 15px;
+        }
+        &__question-text {
+            font-size: 14px;
+        }
+        &__answer-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        &__item {
+            padding: 10px;
+        }
+    }
+}

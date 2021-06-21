@@ -5574,14 +5574,51 @@ exports.setIsLoading = function (isLoading) {
 /***/ })
 /******/ ])["default"];
 });
-const defaultSelect = () => {
+const defaultSelectOld = () => {
     const elements = document.querySelectorAll('.calculator__select');
     elements.forEach(el => {
         const choices = new Choices(el, {
             searchEnabled: false,
+            itemSelectText: '',
         });
     })
 }
 
+const defaultSelect = () => {
+    const elementsDefault = document.querySelectorAll('.form__select');
+    elementsDefault.forEach(elem => {
+        const choicesDefault = new Choices(elem, {
+            searchEnabled: false,
+            itemSelectText: '',
+        });
+    })
+}
+const filterSelect = () => {
+    const elementsDefault = document.querySelectorAll('.cars-filter__select');
+    elementsDefault.forEach(elem => {
+        const choicesDefault = new Choices(elem, {
+            searchEnabled: false,
+            itemSelectText: '',
+        });
+    })
+}
+
+defaultSelectOld();
 defaultSelect();
+filterSelect();
+let tabItem = document.querySelectorAll('.calc-tabs__triggers-item');
+let contentItem = document.querySelectorAll('.calc-tabs__content-item');
+
+tabItem.forEach((item) => 
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        const id = e.target.getAttribute('href').replace('#', '');
+
+        tabItem.forEach((child) => child.classList.remove('calc-tabs__triggers-item--active'));
+        contentItem.forEach((child) => child.classList.remove('calc-tabs__content-item--active'));
+
+        item.classList.add('calc-tabs__triggers-item--active');
+        document.getElementById(id).classList.add('calc-tabs__content-item--active');
+    })
+);
 

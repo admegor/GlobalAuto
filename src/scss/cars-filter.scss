@@ -1,0 +1,58 @@
+.cars-filter {
+    min-height: 55px;
+    &__wrapper {
+        @include gradient(180);
+        border-top: 3px solid #e6e6e6;
+        border-bottom: 3px solid #e6e6e6;
+        height: 100%;
+    }
+    &__form {
+        height: 100%;
+        display: flex;
+        width: 100%;
+    }
+    &__item-wrap:nth-child(2) {
+        margin-right: auto;
+    }
+    &__left {
+        height: 100%;
+        display: flex;
+    }
+    &__right {
+        height: 100%;
+    }
+    &__item-wrap {
+        display: flex;
+        align-items: center;
+    }
+    &__item-wrap + &__item-wrap {
+        margin-left: 10px;
+    }
+    & .choices[data-type*=select-one]:before {
+        content: none;
+    }
+    & .choices[data-type*=select-one] .choices__inner {
+        padding-right: 30px;
+        background-color: transparent;
+    }
+    & .choices[data-type*=select-one] {
+        border: none;
+    }
+    & .choices[data-type*=select-one]:after {
+        background: url("../img/icon-arrow-select-b.png") no-repeat center center;
+    }
+    & .choices[data-type*=select-one].is-open:after {
+        margin-top: -5px;
+        transform: rotate(180deg);
+    }
+}
+@media (max-width: 980px) {
+    .cars-filter {
+        &__form {
+            flex-direction: column;
+        }
+        &__item-wrap + &__item-wrap {
+            margin-left: 0;
+        }
+    }
+}

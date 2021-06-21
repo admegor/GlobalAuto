@@ -1,0 +1,33 @@
+.customs-calc-result {
+    width: 100%;
+    & .content-table tr th:nth-child(1) {
+        min-width: 50%;
+    }
+    & .content-table tr th:nth-child(2) {
+        width: 25%;
+    }
+    & .content-table tr th:nth-child(3) {
+        width: 25%;
+    }
+    & .content-table td:nth-child(2n) {
+        text-align: left;
+    }
+    & .content-table tr:first-child {
+        border-bottom: 2px solid $accent;
+    }
+    & .content-table tr:first-child .content-table--new {
+        border-bottom: 2px solid $white;
+    }
+    & .content-table th {
+        text-align: left;
+        padding: 16px 15px;
+        font-size: 16px;
+    }
+    & .content-table--new {
+        background-color: $red;
+        color: $white;
+    }
+    & tr:nth-child(2n) .content-table--new {
+        background-color: $red-light;
+    }
+}
