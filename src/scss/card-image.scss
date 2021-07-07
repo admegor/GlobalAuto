@@ -1,0 +1,145 @@
+.card-image {
+    &__wrap {
+        display: flex;
+    }
+    &__slider-preview {
+        margin-right: 20px;
+        max-width: 132px;
+        position: relative;
+        max-height: 363px;
+        & .slick-arrow {
+            position: absolute;
+            z-index: 1;
+            background-color: transparent;
+            border: none;
+            background: url("../img/icon-arrow-select.png") no-repeat center center;
+            font-size: 0;
+            left: calc(50% - 10px);
+            top: 10px;
+            width: 20px;
+        }
+        & .slick-arrow.slick-prev {
+            transform: rotate(180deg);
+        }
+        & .slick-arrow.slick-next {
+            top: initial;
+            bottom: 15px;
+        }
+        & .slick-list {
+            overflow: hidden;
+            height: 100%;
+        }
+        & .slick-track {
+            overflow: hidden;
+        }
+        & .slick-active {
+            position: relative;
+            &::before {
+                content: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 5px;
+                height: 100%;
+                border-radius: 5px 0 0 5px;
+                background-color: $accent;
+            }
+        }
+        & .slick-active:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        & .slick-active:hover::before {
+            content: "";
+        }
+        & .slick-current {
+            filter: grayscale(0);
+            position: relative;
+            opacity: 1;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 5px;
+                height: 100%;
+                border-radius: 5px 0 0 5px;
+                background-color: $accent;
+            }
+        }
+    }
+    &__slider-preview-item-wrap {
+        filter: grayscale(100%);
+        border-radius: 5px;
+        cursor: pointer;
+        min-height: 80px;
+        opacity: .8;
+    }
+    &__slider-preview-item-wrap + &__slider-preview-item-wrap {
+        margin-top: 13px;
+    }
+    &__slider-preview-item {
+        height: 80px;
+        width: 132px;
+        border-radius: 5px;
+    }
+    
+    &__slider-big {
+        max-width: 588px;
+        width: 100%;
+        & .slick-track {
+            display: flex;
+            min-width: 0;
+        }
+        & .slick-list {
+            overflow: hidden;
+            
+        }
+    }
+    &__slider-big-wrap {
+        height: 100%;
+        max-height: 363px;
+        width: 588px;
+    }
+    &__slider-big-item {
+        max-height: 363px;
+        // width: 100%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .card-image {
+        &__wrap {
+            flex-direction: column;
+        }
+        &__slider-big {
+            order: 1;
+            margin-bottom: 20px;
+        }
+        &__slider-preview {
+            order: 2;
+            max-width: 590px;
+            display: flex;
+            min-width: 0;
+            margin-right: 0;
+            & .slick-arrow.slick-prev {
+                top: calc(50% - 15px);
+                transform: rotate(90deg);
+                left: 15px;
+            }
+            & .slick-arrow.slick-next {
+                top: calc(50% - 15px);
+                left: initial;
+                right: 25px;
+                transform: rotate(270deg);
+            }
+            & .slick-track {
+                display: flex;
+            }
+        }
+        &__slider-preview-item-wrap + &__slider-preview-item-wrap {
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+    }
+}

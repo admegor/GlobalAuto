@@ -213,6 +213,7 @@ a {
     }
     &__title {
         font-size: 32px;
+        line-height: 1.3;
         font-weight: bold;
         color: $white;
         text-shadow: $textshadow;
@@ -321,5 +322,10 @@ a {
 @media (max-width: 580px) {
     .page-inner {
         padding: 15px 10px;
+    }
+    .page-title {
+        &__title {
+            font-size: 24px;
+        }
     }
 }

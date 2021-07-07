@@ -1,0 +1,46 @@
+.cars-single-tables {
+    background-color: $bg-grey;
+    padding: 40px 0 0;
+    border-radius: 0 0 10px 10px;
+    &__wrapper {
+        display: flex;
+        column-gap: 2%;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 32%;
+        background-color: $white;
+        padding: 30px;
+        margin-bottom: 30px;
+        align-self: flex-start;
+    }
+    & .content-table {
+        & td:nth-child(2n) {
+            font-weight: bold;
+        }
+    }
+    &__content {
+        background-color: $white;
+        padding: 15px 0 40px;
+        border-radius: 0 0 10px 10px;
+    }
+}
+@media (max-width: 1180px) {
+    .cars-single-tables {
+        &__item {
+            width: 49%;
+            padding: 20px;
+        }
+    }
+}
+@media (max-width: 780px) {
+    .cars-single-tables {
+        &__wrapper {
+            column-gap: 0;
+        }
+        &__item {
+            padding: 12px;
+            width: 100%;
+        }
+    }
+}

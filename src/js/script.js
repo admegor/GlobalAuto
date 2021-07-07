@@ -1,5 +1,7 @@
 @@include('webp-test.js')
+@@include('slick.min.js')
+@@include('lightgallery.min.js')
 @@include('choices.js')
 @@include('select.js')
 @@include('calc-tabs.js')
-
+@@include('slider-card.js')
